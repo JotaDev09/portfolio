@@ -10,6 +10,7 @@ let pause = 2000;
  */
 function initIndex() {
   type();
+  includeHTML();
 }
 
 /*

@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .main_container {
@@ -17,4 +19,12 @@ body {
 .title {
     font-size: 50px;
     color: #2A2A79;
+}
+
+.about_me_container {
+    margin-top: 700px;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
 }
