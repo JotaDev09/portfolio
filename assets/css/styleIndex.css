@@ -4,16 +4,16 @@ body {
     flex-direction: column;
 }
 
-.main_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+/*home container*/
+.home_container {
     background: #F5F5F5;
+    padding-top: 115px;
+    margin-bottom: -115px;
 }
 
 .title_portfolio {
-    position: absolute;
-    top: 200px;
+    width: 100%;
+    padding-top: 90px;
 }
 
 .title {
@@ -21,10 +21,56 @@ body {
     color: #2A2A79;
 }
 
+.foto_portfolio {
+    padding: 20px;
+}
+
+.foto_princ {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url('/assets/img/image.jpeg');
+    background-size: 245px;
+    background-position-x: -45px;
+}
+
+.home_social_network {
+    padding: 20px;
+    height: 500px;
+}
+
+.social_network {
+    transform: rotate(90deg);
+    width: 119px;
+    font-size: 20px;
+    color: #2A2A79;
+}
+
+.sozial_line {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    transform: rotate(-45deg);
+}
+
+.social_icon_g {
+    width: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.social_icon_l {
+    width: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.social_icon_t {
+    width: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/*about me container*/
 .about_me_container {
-    margin-top: 700px;
-    position: absolute;
     background-color: red;
-    width: 100%;
-    height: 100%;
 }

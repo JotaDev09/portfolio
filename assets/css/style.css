@@ -1,5 +1,50 @@
+.full-screen {
+    width: 100vw;
+    /* 100% del viewport width */
+    height: 100vh;
+    /* 100% del viewport height */
+}
+
+
 .flex-center-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.column-center-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.space-around-flex-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column-center-evenly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
