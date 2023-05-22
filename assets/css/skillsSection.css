@@ -1,0 +1,38 @@
+/*skills container*/
+.skills_section {
+    background-color: #2A2A79;
+}
+
+.skills_title_cont {
+    padding-left: 50px;
+}
+
+.skills_title {
+    font-size: 50px;
+    color: #F5F5F5;
+}
+
+.skills_container {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills {
+    width: 250px;
+    height: 175px;
+    background-color: #f5f5f5;
+    gap: 15px;
+}
+
+.skills_img {
+    width: 60px;
+}
+
+.skills_type {
+    color: #2A2A79;
+    font-size: 20px;
+}

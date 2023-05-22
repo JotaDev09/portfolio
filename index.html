@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/css/styleIndex.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/head.css">
+    <link rel="stylesheet" href="assets/css/aboutme.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/skillsSection.css">
 
     <script src="assets/js/scriptIndex.js"></script>
     <script src="assets/js/includeHtml.js"></script>
@@ -19,27 +22,77 @@
 <body onload="initIndex()">
     <!--Header-->
     <div w3-include-html="head.html"></div>
-    <!--home container-->
-    <section class="home_container space-around-flex-start full-screen" id="homeSection">
-        <div class="foto_portfolio">
-            <img class="foto_princ">
-        </div>
-        <div class="title_portfolio center-center">
-            <a class="title">I'm <span id="typed-text"></span></a>
-        </div>
-        <div class="home_social_network column-center-center">
-            <span class="social_network">FOLLOW ME</span>
-            <img src="assets/icons/blau_linie.png" class="sozial_line">
-            <a href="https://github.com/JotaDev09" target="_blank">
-                <img src="assets/icons/github.svg" class="social_icon_g"></a>
-            <a href="https://www.linkedin.com/in/juan-de-santos-a98207275" target="_blank">
-                <img src="assets/icons/linkedin.svg" class="social_icon_l"></a>
-            <a href="https://twitter.com/JotaSG9" target="_blank">
-                <img src="assets/icons/twitter.svg" class="social_icon_t"></a>
-        </div>
-    </section>
-    <!--about me container-->
-    <section class="about_me_container full-screen" id="aboutMeSection"></section>
+    <div id="fullPageContainer" class="fp_section">
+        <!--home section-->
+        <section class="full-screen home_container space-around-flex-start" id="homeSection">
+
+            <div class="title_portfolio center-center">
+                <a class="title">I'm <span id="typed-text"></span></a>
+            </div>
+            <div class="home_social_network column-center-center">
+                <span class="social_network">FOLLOW ME</span>
+                <img src="assets/icons/blau_linie.png" class="sozial_line">
+                <a href="https://github.com/JotaDev09" target="_blank">
+                    <img src="assets/icons/github.svg" class="social_icon_g"></a>
+                <a href="https://www.linkedin.com/in/juan-de-santos-a98207275" target="_blank">
+                    <img src="assets/icons/linkedin.svg" class="social_icon_l"></a>
+                <a href="https://twitter.com/JotaSG9" target="_blank">
+                    <img src="assets/icons/twitter.svg" class="social_icon_t"></a>
+            </div>
+        </section>
+
+        <!--about me section-->
+        <section class="full-screen about_me_section " id="aboutMeSection">
+            <div class="foto_portfolio">
+                <img class="foto_princ">
+            </div>
+            <div class="aboutme_contain">
+                <div class="aboutme_title_cont">
+                    <h3 class="aboutme_title">About me</h3><br>
+                </div>
+                <div class="aboutme_resum">
+                    <a class="aboutme_text">I'm a Junior Front End developer from Spain, but I've been in Germany since
+                        2018. In 2022 I decided to change my career to face new challenges, so I got to the world of
+                        programming. I discovered that what made me suffer when I learned it, had the ability to give me
+                        joy.</a>
+                </div>
+                <div class="aboutme_characteristics">
+                    <div class="aboutme_strengths">
+                        <a class="characteristics_title">Strengths</a>
+                        <div class="characteristics_container" id="strengthsCont"></div>
+                    </div>
+                    <div class="aboutme_weaknesses">
+                        <a class="characteristics_title">Weaknesses</a>
+                        <div class="characteristics_container" id="weaknessesCont"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--projects section-->
+        <section class="full-screen projects_section" id="projectsSection">
+
+        </section>
+
+        <!--projects section-->
+        <section class="full-screen skills_section column-center" id="skillsSection">
+            <div class="all_skills">
+                <div class="skills_title_cont">
+                    <h3 class="skills_title">My Skills</h3><br>
+                </div>
+                <div class="skills_container" id="skillsContainer">
+                </div>
+            </div>
+            <div class="languages">
+                <div class="skills_title_cont">
+                    <h3 class="skills_title">Languages</h3><br>
+                </div>
+                <div class="skills_container" id="languagesContainer">
+                </div>
+            </div>
+        </section>
+
+    </div>
 
 </body>
 
@@ -51,5 +104,11 @@
     <a target="_blank" href="https://icons8.com/icon/3tC9EQumUAuq/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/5MQ0gPAYYx7a/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/-ERR-M1lP9BB/linie">Linie</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
+    <a target="_blank" href="https://icons8.com/icon/21278/css3">css</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/21278/css3">css</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/PXTY4q2Sq2lG/javascript">JavaScript</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/fsZLSWECcBuK/api-einstellungen">API-Einstellungen</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/17967/spanien">Spanien</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/15502/deutschland">Deutschland</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/15534/gro%C3%9Fbritannien">Großbritannien</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 -->
