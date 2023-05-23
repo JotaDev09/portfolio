@@ -1,6 +1,9 @@
 /*skills container*/
 .skills_section {
     background-color: #2A2A79;
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
 }
 
 .skills_title_cont {

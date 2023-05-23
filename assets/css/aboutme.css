@@ -29,13 +29,29 @@
     color: #F5F5F5;
 }
 
+.about_me_description {
+    width: 600px;
+}
+
 .aboutme_text {
     font-size: 20px;
     color: #F5F5F5;
 }
 
 .aboutme_resum {
-    width: 600px;
+    display: flex;
+    width: 900px;
+    gap: 50px;
+}
+
+.info_type {
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+.info_type span {
+    font-size: 17px;
+    color: #F5F5F5;
 }
 
 .aboutme_characteristics {

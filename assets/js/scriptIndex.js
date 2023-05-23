@@ -5,6 +5,37 @@ let isDeleting = false;
 let typingSpeed = 60;
 let pause = 2000;
 
+let myInfo = [
+  {
+    name: "Juan de Santos",
+    phone: "+49 0178 5546224",
+    address: "Berlin, Germany",
+    email: "juanj.desantos@gmail.com",
+  },
+];
+
+let strengths = [
+  "Hard-working",
+  "Look for solutions",
+  "Dedicated",
+  "Enthusiastic",
+  "Methodical",
+  "Patient",
+  "Trustworthy",
+  "Team Player",
+  "Optimistic",
+];
+let weaknesses = [
+  "Non-native German/English language",
+  "Impulsive",
+  "Shy person in the beginning",
+  "Overthinking",
+  "Self-critical",
+  "Public speaking",
+];
+
+let projects = ["Weather App", "Portfolio", "El Pollo loco"];
+
 let skills = [
   {
     type: "HTML",
@@ -19,8 +50,8 @@ let skills = [
     icon: "assets/icons/javascript.svg",
   },
   {
-    type: "Scrum",
-    icon: "assets/icons/scrum.png",
+    type: "React",
+    icon: "assets/icons/react.png",
   },
   {
     type: "API",
@@ -29,6 +60,10 @@ let skills = [
   {
     type: "Github",
     icon: "assets/icons/githubBlack.svg",
+  },
+  {
+    type: "Scrum",
+    icon: "assets/icons/scrum.png",
   },
 ];
 
@@ -50,16 +85,22 @@ let languages = [
   },
 ];
 
-let strengths = ["Hard-working", "Look for solutions"];
-let weaknesses = ["Non-native German/English language", "Impulsive"];
-
 /*
- * the function inits some necessary functions in onload
+ * This function initializes some necessary functions when the page is loaded.
  */
 function initIndex() {
   type();
   includeHTML();
+  renderArrays();
+}
+
+/*
+ * This function calls the necessary functions to render the arrays in the HTML document.
+ */
+function renderArrays() {
+  renderInfo();
   renderSkills();
+  renderlanguages();
   renderStrengthsCont();
   renderWeaknessesCont();
 }
@@ -97,6 +138,30 @@ function type() {
 }
 
 /*
+ * the function takes the array myInfo and send it to the renderInformation function
+ */
+function renderInfo() {
+  let infoContainer = document.getElementById("infoContainer");
+  infoContainer.innerHTML = "";
+  let newInfo = myInfo[0];
+  infoContainer.innerHTML += renderInformation(newInfo);
+}
+
+/**
+ * the function renders the info to the HTML document
+ *
+ * @param {object} newInfo - the object that contains the information.
+ * @returns {string} - A text template representing the HTML element of the skill.
+ */
+function renderInformation(newInfo) {
+  return `
+  <a class="info_type">Name: <span>${newInfo["name"]}</span></a><br>
+  <a class="info_type">Phone: <span>${newInfo["phone"]}</span></a><br>
+  <a class="info_type">Address: <span>${newInfo["address"]}</span></a><br>
+  <a class="info_type">Email: <span>${newInfo["email"]}</span></a>`;
+}
+
+/*
  * the function takes the array of the skills and send it to the renderSkill function
  */
 function renderSkills() {
@@ -108,8 +173,11 @@ function renderSkills() {
   }
 }
 
-/*
+/**
  * the function renders the skills to the HTML document
+ *
+ * @param {object} newSkill - the object that contains the skills.
+ * @returns {string} - A text template representing the HTML element of the skill.
  */
 function renderSkill(newSkill) {
   return `
@@ -117,7 +185,35 @@ function renderSkill(newSkill) {
       <img class="skills_img" src="${newSkill["icon"]}">
       <a class="skills_type" id="skillsType">${newSkill["type"]}</a>
   </div>
-                `;
+  `;
+}
+
+/*
+ * the function takes the array of the skills and send it to the renderSkill function
+ */
+function renderlanguages() {
+  let languagesContainer = document.getElementById("languagesContainer");
+  languagesContainer.innerHTML = "";
+  for (let language = 0; language < languages.length; language++) {
+    let newLanguage = languages[language];
+    languagesContainer.innerHTML += renderLanguage(newLanguage);
+  }
+}
+
+/**
+ * the function renders the skills to the HTML document
+ *
+ * @param {object} newLanguage - the object that contains the languages.
+ * @returns {string} - A text template representing the HTML element of the language.
+ */
+function renderLanguage(newLanguage) {
+  return `
+  <div class="skills column-center-center">
+  <img class="skills_img" src="${newLanguage["flag"]}">
+  <a class="skills_type" >${newLanguage["language"]}</a>
+  <a class="skills_type" >${newLanguage["level"]}</a>
+  </div>
+  `;
 }
 
 /*
@@ -132,9 +228,11 @@ function renderStrengthsCont() {
   }
 }
 
-/*
- * the function renders the skills to the HTML document
- * {strength}:
+/**
+ * the function renders the strengths to the HTML document
+ *
+ * @param {object} strength - the object that contains the strengths.
+ * @returns {string} - A text template representing the HTML element of the language.
  */
 function renderStrengths(strength) {
   return `
@@ -154,6 +252,12 @@ function renderWeaknessesCont() {
   }
 }
 
+/**
+ * the function renders the weaknesses to the HTML document
+ *
+ * @param {object} weakness - the object that contains the weaknesses.
+ * @returns {string} - A text template representing the HTML element of the language.
+ */
 function renderWeaknesses(weakness) {
   return `
   <a class="characteristics">${weakness}</a>
