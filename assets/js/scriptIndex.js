@@ -34,7 +34,32 @@ let weaknesses = [
   "Public speaking",
 ];
 
-let projects = ["Weather App", "Portfolio", "El Pollo loco"];
+let projects = [
+  {
+    project: "Weather App",
+    github: "https://jotadev09.github.io/WeatherApp/",
+    screenshot: "",
+    website: "https://github.com/JotaDev09/WeatherApp.git",
+  },
+  {
+    project: "Portfolio",
+    github: "",
+    screenshot: "",
+    website: "",
+  },
+  {
+    project: "El Pollo loco",
+    github: "https://github.com/JotaDev09/Crazy-Chicken.git",
+    screenshot: "",
+    website: "https://jotadev09.github.io/Crazy-Chicken/",
+  },
+  {
+    project: "Instagram",
+    github: "https://jotadev09.github.io/InstagramCopy/",
+    screenshot: "",
+    website: "https://github.com/JotaDev09/InstagramCopy.git",
+  },
+];
 
 let skills = [
   {
