@@ -34,7 +34,19 @@
     cursor: pointer;
 }
 
-.projects_title {
+.projects_name_cont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects_name {
     color: #2A2A79;
     font-size: 17px;
+}
+
+.projects_github {
+    width: 30px;
+    cursor: pointer;
+
 }

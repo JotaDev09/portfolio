@@ -36,28 +36,28 @@ let weaknesses = [
 
 let projects = [
   {
-    project: "Portfolio",
+    name: "Portfolio",
     github: "",
     screenshot: "",
     website: "",
   },
   {
-    project: "Weather App",
-    github: "https://jotadev09.github.io/WeatherApp/",
+    name: "Weather App",
+    github: "https://github.com/JotaDev09/WeatherApp.git",
     screenshot: "/assets/img/weatherApp.png",
-    website: "https://github.com/JotaDev09/WeatherApp.git",
+    website: "https://jotadev09.github.io/WeatherApp/",
   },
   {
-    project: "El Pollo loco",
+    name: "El Pollo loco",
     github: "https://github.com/JotaDev09/Crazy-Chicken.git",
     screenshot: "/assets/img/polloLoco.jpg",
     website: "https://jotadev09.github.io/Crazy-Chicken/",
   },
   {
-    project: "Instagram",
-    github: "https://jotadev09.github.io/InstagramCopy/",
+    name: "Instagram",
+    github: "https://github.com/JotaDev09/InstagramCopy.git",
     screenshot: "/assets/img/instagram.png",
-    website: "https://github.com/JotaDev09/InstagramCopy.git",
+    website: "https://jotadev09.github.io/InstagramCopy/",
   },
 ];
 
@@ -256,10 +256,27 @@ function renderProjects() {
 function renderProject(newProject) {
   return `
   <div class="projects column-center-center">
-      <img class="projects_img" style="background-image: url('${newProject["screenshot"]}')" >
-      <a class="projects_title" id="projectsTitle">${newProject["project"]}</a>
+      <img class="projects_img" style="background-image: url('${newProject["screenshot"]}')" data-webSite="${newProject["website"]}" onClick="openWebSite()">
+      <div class="projects_name_cont">
+        <a class="projects_name" id="projectsName">${newProject["name"]}</a>
+        <img class="projects_github" src="/assets/icons/github.svg" data-github="${newProject["github"]}" onClick="openGithub()">
+      </div>
   </div>
   `;
+}
+
+function openWebSite() {
+  let webSiteLink = event.target.dataset.website;
+  if (webSiteLink) {
+    window.open(webSiteLink);
+  }
+}
+
+function openGithub() {
+  let githubLink = event.target.dataset.github;
+  if (githubLink) {
+    window.open(githubLink);
+  }
 }
 
 /*
