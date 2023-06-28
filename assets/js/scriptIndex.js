@@ -36,27 +36,27 @@ let weaknesses = [
 
 let projects = [
   {
-    project: "Weather App",
-    github: "https://jotadev09.github.io/WeatherApp/",
-    screenshot: "",
-    website: "https://github.com/JotaDev09/WeatherApp.git",
-  },
-  {
     project: "Portfolio",
     github: "",
     screenshot: "",
     website: "",
   },
   {
+    project: "Weather App",
+    github: "https://jotadev09.github.io/WeatherApp/",
+    screenshot: "/assets/img/weatherApp.png",
+    website: "https://github.com/JotaDev09/WeatherApp.git",
+  },
+  {
     project: "El Pollo loco",
     github: "https://github.com/JotaDev09/Crazy-Chicken.git",
-    screenshot: "",
+    screenshot: "/assets/img/polloLoco.jpg",
     website: "https://jotadev09.github.io/Crazy-Chicken/",
   },
   {
     project: "Instagram",
     github: "https://jotadev09.github.io/InstagramCopy/",
-    screenshot: "",
+    screenshot: "/assets/img/instagram.png",
     website: "https://github.com/JotaDev09/InstagramCopy.git",
   },
 ];
@@ -124,10 +124,11 @@ function initIndex() {
  */
 function renderArrays() {
   renderInfo();
-  renderSkills();
-  renderlanguages();
   renderStrengthsCont();
   renderWeaknessesCont();
+  renderProjects();
+  renderSkills();
+  renderlanguages();
 }
 
 /*
@@ -172,6 +173,54 @@ function renderInfo() {
   infoContainer.innerHTML += renderInformation(newInfo);
 }
 
+/*
+ * the function takes the array of the strengths and send it to the renderStrengths function
+ */
+function renderStrengthsCont() {
+  let strengthsCont = document.getElementById("strengthsCont");
+  strengthsCont.innerHTML = "";
+  for (let adj = 0; adj < strengths.length; adj++) {
+    const strength = strengths[adj];
+    strengthsCont.innerHTML += renderStrengths(strength);
+  }
+}
+
+/**
+ * the function renders the strengths to the HTML document
+ *
+ * @param {object} strength - the object that contains the strengths.
+ * @returns {string} - A text template representing the HTML element of the language.
+ */
+function renderStrengths(strength) {
+  return `
+  <a class="characteristics">${strength}</a>
+                        `;
+}
+
+/*
+ * the function takes the array of the weaknesses and send it to the renderWeaknesses function
+ */
+function renderWeaknessesCont() {
+  let weaknessesCont = document.getElementById("weaknessesCont");
+  weaknessesCont.innerHTML = "";
+  for (let adj = 0; adj < weaknesses.length; adj++) {
+    const weakness = weaknesses[adj];
+    weaknessesCont.innerHTML += renderWeaknesses(weakness);
+  }
+}
+
+/**
+ * the function renders the weaknesses to the HTML document
+ *
+ * @param {object} weakness - the object that contains the weaknesses.
+ * @returns {string} - A text template representing the HTML element of the language.
+ */
+function renderWeaknesses(weakness) {
+  return `
+  <a class="characteristics">${weakness}</a>
+                        `;
+}
+
 /**
  * the function renders the info to the HTML document
  *
@@ -184,6 +233,33 @@ function renderInformation(newInfo) {
   <a class="info_type">Phone: <span>${newInfo["phone"]}</span></a><br>
   <a class="info_type">Address: <span>${newInfo["address"]}</span></a><br>
   <a class="info_type">Email: <span>${newInfo["email"]}</span></a>`;
+}
+
+/*
+ * the function takes the array of the projects and send it to the renderProject function
+ */
+function renderProjects() {
+  let projectsContainer = document.getElementById("projectsContainer");
+  projectsContainer.innerHTML = "";
+  for (let project = 0; project < projects.length; project++) {
+    let newProject = projects[project];
+    projectsContainer.innerHTML += renderProject(newProject);
+  }
+}
+
+/**
+ * the function renders the projects to the HTML document
+ *
+ * @param {object} newProject - the object that contains the projects.
+ * @returns {string} - A text template representing the HTML element of the project.
+ */
+function renderProject(newProject) {
+  return `
+  <div class="projects column-center-center">
+      <img class="projects_img" style="background-image: url('${newProject["screenshot"]}')" >
+      <a class="projects_title" id="projectsTitle">${newProject["project"]}</a>
+  </div>
+  `;
 }
 
 /*
@@ -239,52 +315,4 @@ function renderLanguage(newLanguage) {
   <a class="skills_type" >${newLanguage["level"]}</a>
   </div>
   `;
-}
-
-/*
- * the function takes the array of the strengths and send it to the renderStrengths function
- */
-function renderStrengthsCont() {
-  let strengthsCont = document.getElementById("strengthsCont");
-  strengthsCont.innerHTML = "";
-  for (let adj = 0; adj < strengths.length; adj++) {
-    const strength = strengths[adj];
-    strengthsCont.innerHTML += renderStrengths(strength);
-  }
-}
-
-/**
- * the function renders the strengths to the HTML document
- *
- * @param {object} strength - the object that contains the strengths.
- * @returns {string} - A text template representing the HTML element of the language.
- */
-function renderStrengths(strength) {
-  return `
-  <a class="characteristics">${strength}</a>
-                        `;
-}
-
-/*
- * the function takes the array of the weaknesses and send it to the renderWeaknesses function
- */
-function renderWeaknessesCont() {
-  let weaknessesCont = document.getElementById("weaknessesCont");
-  weaknessesCont.innerHTML = "";
-  for (let adj = 0; adj < weaknesses.length; adj++) {
-    const weakness = weaknesses[adj];
-    weaknessesCont.innerHTML += renderWeaknesses(weakness);
-  }
-}
-
-/**
- * the function renders the weaknesses to the HTML document
- *
- * @param {object} weakness - the object that contains the weaknesses.
- * @returns {string} - A text template representing the HTML element of the language.
- */
-function renderWeaknesses(weakness) {
-  return `
-  <a class="characteristics">${weakness}</a>
-                        `;
 }

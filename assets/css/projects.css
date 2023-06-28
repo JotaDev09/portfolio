@@ -2,3 +2,39 @@
 .projects_section {
     background-color: #F5F5F5;
 }
+
+.projects_title_cont {
+    padding-left: 50px;
+}
+
+.projects_title {
+    font-size: 50px;
+    color: #2A2A79;
+}
+
+.projects_container {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects {
+
+    gap: 15px;
+}
+
+.projects_img {
+    width: 200px;
+    height: 200px;
+    background: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.projects_title {
+    color: #2A2A79;
+    font-size: 17px;
+}
