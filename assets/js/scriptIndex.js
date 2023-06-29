@@ -265,6 +265,9 @@ function renderProject(newProject) {
   `;
 }
 
+/*
+ * the function open the website's link of the project
+ */
 function openWebSite() {
   let webSiteLink = event.target.dataset.website;
   if (webSiteLink) {
@@ -272,6 +275,9 @@ function openWebSite() {
   }
 }
 
+/*
+ * the function open the github's link of the project
+ */
 function openGithub() {
   let githubLink = event.target.dataset.github;
   if (githubLink) {
