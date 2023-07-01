@@ -2,11 +2,16 @@
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: white;
     height: 115px;
     z-index: 2;
+}
+
+.head_logo_menu {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .head_logo {
@@ -32,4 +37,27 @@
     color: #2A2A79;
     cursor: pointer;
     text-decoration: none;
+}
+
+.menu_contain:hover {
+    color: #7979d1;
+}
+
+.languages {
+    padding-top: 20px;
+}
+
+.languages a {
+    text-decoration: none;
+    color: #2A2A79;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+.languages a:hover {
+    color: #7979d1;
+}
+
+.languages a.active {
+    color: #7979d1;
 }

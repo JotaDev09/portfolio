@@ -7,7 +7,7 @@ let pause = 2000;
 
 let myInfo = [
   {
-    name: "Juan de Santos",
+    name: " Juan de Santos",
     phone: "+49 0178 5546224",
     address: "Berlin, Germany",
     email: "juanj.desantos@gmail.com",
@@ -115,7 +115,6 @@ let languages = [
  */
 function initIndex() {
   type();
-  includeHTML();
   renderArrays();
 }
 
@@ -173,6 +172,20 @@ function renderInfo() {
   infoContainer.innerHTML += renderInformation(newInfo);
 }
 
+/**
+ * the function renders the info to the HTML document
+ *
+ * @param {object} newInfo - the object that contains the information.
+ * @returns {string} - A text template representing the HTML element of the skill.
+ */
+function renderInformation(newInfo) {
+  return `
+  <a id="aboutName" class="info_type">Name: </a><span class="info_type">${newInfo["name"]}</span><br>
+  <a id="aboutPhone" class="info_type">Phone: </a><span class="info_type">${newInfo["phone"]}</span><br>
+  <a id="aboutAddress" class="info_type">Address: </a><span class="info_type">${newInfo["address"]}</span><br>
+  <a id="aboutEmail" class="info_type">Email: <span class="info_type">${newInfo["email"]}</span></a>`;
+}
+
 /*
  * the function takes the array of the strengths and send it to the renderStrengths function
  */
@@ -219,20 +232,6 @@ function renderWeaknesses(weakness) {
   return `
   <a class="characteristics">${weakness}</a>
                         `;
-}
-
-/**
- * the function renders the info to the HTML document
- *
- * @param {object} newInfo - the object that contains the information.
- * @returns {string} - A text template representing the HTML element of the skill.
- */
-function renderInformation(newInfo) {
-  return `
-  <a class="info_type">Name: <span>${newInfo["name"]}</span></a><br>
-  <a class="info_type">Phone: <span>${newInfo["phone"]}</span></a><br>
-  <a class="info_type">Address: <span>${newInfo["address"]}</span></a><br>
-  <a class="info_type">Email: <span>${newInfo["email"]}</span></a>`;
 }
 
 /*

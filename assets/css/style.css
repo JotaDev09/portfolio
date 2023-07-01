@@ -1,7 +1,6 @@
 .full-screen {
     width: 100vw;
     height: 100vh;
-    padding-top: 115px;
     margin-bottom: -115px;
     scroll-snap-align: start;
 }
