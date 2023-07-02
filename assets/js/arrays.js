@@ -17,19 +17,19 @@ let projects = [
   {
     name: "Weather App",
     github: "https://github.com/JotaDev09/WeatherApp.git",
-    screenshot: "/assets/img/weatherApp.png",
+    screenshot: "assets/img/weatherApp.png",
     website: "https://jotadev09.github.io/WeatherApp/",
   },
   {
     name: "El Pollo loco",
     github: "https://github.com/JotaDev09/Crazy-Chicken.git",
-    screenshot: "/assets/img/polloLoco.jpg",
+    screenshot: "assets/img/polloLoco.jpg",
     website: "https://jotadev09.github.io/Crazy-Chicken/",
   },
   {
     name: "Instagram",
     github: "https://github.com/JotaDev09/InstagramCopy.git",
-    screenshot: "/assets/img/instagram.png",
+    screenshot: "assets/img/instagram.png",
     website: "https://jotadev09.github.io/InstagramCopy/",
   },
 ];
