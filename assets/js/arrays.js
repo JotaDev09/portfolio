@@ -142,6 +142,9 @@ let data = {
     projectsTitle: "Projects",
     skillsTitle: "My Skills als Developer",
     languagesTitle: "Languages",
+    design: "Website design by ",
+    design_: "and programmed by ",
+    attributions: "Attributions",
   },
   german: {
     menuHome: "Home",
@@ -158,6 +161,9 @@ let data = {
     projectsTitle: "Projekte",
     skillsTitle: "Meine Fähigkeiten als Entwickler",
     languagesTitle: "Sprachen",
+    design: "Website-Design von ",
+    design_: "und programmiert von ",
+    attributions: "Zuweisung",
   },
   spanish: {
     menuHome: "Inicio",
@@ -174,6 +180,9 @@ let data = {
     projectsTitle: "Proyectos",
     skillsTitle: "Mis Habilidades como Desarrollador",
     languagesTitle: "Idiomas",
+    design: "Página web diseñada por ",
+    design_: "y programada por ",
+    attributions: "Atribuciones",
   },
 };
 

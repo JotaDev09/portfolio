@@ -24,6 +24,9 @@ links.forEach((link) => {
     projectsT.textContent = data[attr].projectsTitle;
     skillsTitle.textContent = data[attr].skillsTitle;
     languagesTitle.textContent = data[attr].languagesTitle;
+    attributions.textContent = data[attr].attributions;
+    design_.textContent = data[attr].design_;
+    design.textContent = data[attr].design;
 
     // Call the function to render the attributes corresponding to the selected language
     renderAttributesCont(attr);

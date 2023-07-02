@@ -1,5 +1,5 @@
 .contact_cont {
-    height: 97vh;
+    height: 97%;
 }
 
 .contact_section {
@@ -40,7 +40,7 @@
 }
 
 .contact_foot {
-    height: 3vh;
+    height: 3%;
     background-color: white;
     display: flex;
     justify-content: space-around;
