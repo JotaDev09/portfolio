@@ -30,18 +30,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 43px;
 }
 
 .menu_contain {
     padding: 25px;
-    font-size: 20px;
+    font-size: 17px;
     color: #2A2A79;
     cursor: pointer;
     text-decoration: none;
 }
 
 .menu_contain:hover {
-    color: #7979d1;
+    color: #00CFFF;
 }
 
 .languages {}
@@ -51,12 +52,14 @@
     color: #2A2A79;
     padding-right: 3px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .languages a:hover {
-    color: #7979d1;
+    color: #00CFFF;
 }
 
 .languages a.active {
-    color: #7979d1;
+    color: #00CFFF;
 }

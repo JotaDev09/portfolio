@@ -8,7 +8,6 @@ body {
 /*home container*/
 .home_container {
     background: #F5F5F5;
-    padding-top: 230px !important;
 }
 
 .title_portfolio {
@@ -20,7 +19,9 @@ body {
 
 .title {
     font-size: 50px;
+    font-weight: 500;
     color: white;
+    letter-spacing: 3px;
 }
 
 .home_social_network {
@@ -28,6 +29,7 @@ body {
     height: 100%;
     margin-top: -115px;
     z-index: 10;
+    padding-right: 54px;
 }
 
 .social_network {
@@ -35,6 +37,7 @@ body {
     width: 140px;
     font-size: 20px;
     color: white;
+    letter-spacing: 1px;
 }
 
 .sozial_line {

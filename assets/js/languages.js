@@ -40,44 +40,34 @@ links.forEach((link) => {
  */
 function renderAttributesCont(attr) {
   let strengths = [];
-  let weaknesses = [];
   let languages = [];
 
   if (attr === "german") {
     strengths = strengthsDE;
-    weaknesses = weaknessesDE;
     languages = languagesDE;
   } else if (attr === "spanish") {
     strengths = strengthsES;
-    weaknesses = weaknessesES;
     languages = languagesES;
   } else {
     strengths = strengthsEN;
-    weaknesses = weaknessesEN;
     languages = languagesEN;
   }
 
-  renderAttributes(strengths, weaknesses, languages);
+  renderAttributes(strengths, languages);
 }
 
 /**
  * the function renders the attributes corresponding to the selected language.
  *
  * @param {object} strengths - the object that contains the strengths.
- * @param {object} weaknesses - the object that contains the waknesses.
  * @param {object} languages - the object that contains the languages.
  */
-function renderAttributes(strengths, weaknesses, languages) {
+function renderAttributes(strengths, languages) {
   let strengthsHTML = "";
-  let weaknessesHTML = "";
   let languagesHTNL = "";
 
   strengths.forEach((strength) => {
     strengthsHTML += renderStrength(strength);
-  });
-
-  weaknesses.forEach((weakness) => {
-    weaknessesHTML += renderWeaknesses(weakness);
   });
 
   languages.forEach((language) => {
@@ -85,7 +75,6 @@ function renderAttributes(strengths, weaknesses, languages) {
   });
 
   strengthsCont.innerHTML = strengthsHTML;
-  weaknessesCont.innerHTML = weaknessesHTML;
   languagesContainer.innerHTML = languagesHTNL;
 }
 
@@ -99,18 +88,6 @@ function renderStrength(strength) {
   return `
     <a class="characteristics">${strength}</a>
   `;
-}
-
-/**
- * the function renders the weaknesses to the HTML document
- *
- * @param {object} weakness - the object that contains the weaknesses.
- * @returns {string} - A text template representing the HTML element of the language.
- */
-function renderWeaknesses(weakness) {
-  return `
-  <a class="characteristics">${weakness}</a>
-                        `;
 }
 
 /**

@@ -2,6 +2,7 @@
 .about_me_section {
     background-color: #F5F5F5;
     display: flex;
+    padding-top: 65px;
 }
 
 .foto_portfolio {
@@ -17,27 +18,28 @@
 .aboutme_contain {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding-left: 100px;
 }
 
 .aboutme_title {
-    font-size: 50px;
-    color: #2A2A79;
+    font-size: 25px;
+    color: #00CFFF;
 }
 
 .about_me_description {
-    width: 600px;
+    width: 730px;
+    text-align: justify;
 }
 
 .aboutme_text {
-    font-size: 20px;
+    font-size: 17px;
     color: #2A2A79;
 }
 
 .aboutme_resum {
     display: flex;
     width: 900px;
-    gap: 50px;
+    padding-top: 7px;
 }
 
 .aboutme_characteristics {
@@ -51,17 +53,18 @@
 
 .characteristics_title {
     font-size: 25px;
-    color: #2A2A79;
+    color: #00CFFF;
 }
 
 .characteristics_container {
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+    gap: 17px;
 }
 
 .characteristics {
-    font-size: 20px;
+    font-size: 15px;
     color: #2A2A79;
 }
 
@@ -71,8 +74,17 @@
 }
 
 .buttonCV {
-    height: 35px;
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    border: 1px solid #2A2A79;
+    background-color: #F5F5F5;
+    padding: 12px;
+    color: #2A2A79;
+}
+
+.buttonCV:hover {
+    border: 1px solid #00CFFF;
 }

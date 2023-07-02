@@ -128,15 +128,15 @@ let languagesES = [
 // All the info in english, german and spanish
 let data = {
   english: {
-    menuHome: "Home",
-    menuMe: "About me",
+    menuHome: "HOME",
+    menuMe: "ABOUT ME",
     menuProjects: "Projects",
-    menuSkills: "Skills",
-    title: "I'm",
+    menuSkills: "KNOWLEDGE",
+    title: "I'M",
     followMe: "FOLLOW ME",
     description:
-      "I'm a Junior Front-End developer from Spain, currently residing in Germany since 2018, with a background in other kind of works. In 2022, a decision was made to embrace new challenges and explore the world of programming. The process of learning programming, which once caused difficulties, unexpectedly revealed a source of joy and fulfillment. Seeking the opportunity to work as a professional programmer, previous experience in project development has been gained.",
-    strengths: "Strengths",
+      "I'm Jr. Front-End Developer from Spain, currently residing in Germany since 2018, with a background in others work fields. In 2022, I made the decision to embrace new challenges and explore the world of programming. The learning process of programming, which initially presented difficulties, unexpectedly revealed a source of joy and satisfaction. I've gained previous experience in developing my own projects and am looking for the opportunity to work as a professional programmer",
+    strengths: "SKILLS",
     weaknesses: "Weaknesses",
     buttonCV: "Download CV",
     projectsTitle: "Projects",
@@ -151,10 +151,10 @@ let data = {
     menuMe: "Über mich",
     menuProjects: "Projekte",
     menuSkills: "Skills",
-    title: "Ich bin",
+    title: "ICH BIN",
     followMe: "FOLGE UNS",
     description:
-      "Ich bin ein Junior Front-End Entwickler aus Spanien und lebe seit 2018 in Deutschland. Zuvor habe ich in anderen Bereichen gearbeitet. Im Jahr 2022 habe ich mich entschieden, neue Herausforderungen anzunehmen und die Welt der Programmierung zu erkunden. Der Lernprozess des Programmierens, der früher Schwierigkeiten verursachte, enthüllte unerwartet eine Quelle der Freude und Erfüllung. Auf der Suche nach der Möglichkeit, als professioneller Programmierer zu arbeiten, habe ich bereits Erfahrung in der Projektentwicklung gesammelt.",
+      "Ich bin Junior Front-End Entwickler aus Spanien und lebe seit 2018 in Deutschland. Zuvor habe ich in anderen Bereichen gearbeitet. Im Jahr 2022 habe ich mich entschieden, neue Herausforderungen anzunehmen und die Welt der Programmierung zu erkunden. Der Lernprozess des Programmierens, der früher Schwierigkeiten verursachte, enthüllte unerwartet eine Quelle der Freude und Erfüllung. Auf der Suche nach der Möglichkeit, als professioneller Programmierer zu arbeiten, habe ich bereits Erfahrung in der Projektentwicklung gesammelt.",
     strengths: "Stärke",
     weaknesses: "Schwäche",
     buttonCV: "Herunterladen CV",
@@ -167,13 +167,13 @@ let data = {
   },
   spanish: {
     menuHome: "Inicio",
-    menuMe: "Sobre mí",
+    menuMe: "SOY",
     menuProjects: "Proyectos",
     menuSkills: "Habilidades",
     title: "Yo soy",
     followMe: "SÍGUEME",
     description:
-      "Soy un desarrollador Front-End junior de España, actualmente resido en Alemania desde 2018, y cuento con experiencia en otros campos laborales. En 2022, tomé la decisión de abrazar nuevos desafíos y explorar el mundo de la programación. El proceso de aprendizaje de la programación, que en un principio presentaba dificultades, reveló inesperadamente una fuente de alegría y satisfacción. En busca de la oportunidad de trabajar como programador profesional, he adquirido experiencia previa en el desarrollo de proyectos.",
+      "Soy desarrollador Front-End junior de España, actualmente resido en Alemania desde 2018, y cuento con experiencia en otros campos laborales. En 2022, tomé la decisión de abrazar nuevos desafíos y explorar el mundo de la programación. El proceso de aprendizaje de la programación, que en un principio presentaba dificultades, reveló inesperadamente una fuente de alegría y satisfacción. En busca de la oportunidad de trabajar como programador profesional, he adquirido experiencia previa en el desarrollo de proyectos.",
     strengths: "Virtudes",
     weaknesses: "Debilidades",
     buttonCV: "Descargar CV",
@@ -193,10 +193,8 @@ let strengthsEN = [
   "Dedicated",
   "Enthusiastic",
   "Methodical",
-  "Patient",
   "Trustworthy",
   "Team Player",
-  "Optimistic",
 ];
 
 // Strengths german

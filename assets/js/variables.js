@@ -1,5 +1,5 @@
 // Variables for controlling the presentation and effect of the typewriter
-const texts = ["Juan de Santos", "Front-End Developer"];
+const texts = ["JUAN DE SANTOS", "FRONT-END DEVELOPER"];
 let currentTextIndex = 0;
 let currentText = "";
 let isDeleting = false;
