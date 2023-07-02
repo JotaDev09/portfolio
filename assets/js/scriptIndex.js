@@ -1,115 +1,3 @@
-const texts = ["Juan de Santos", "Front End Developer"];
-let currentTextIndex = 0;
-let currentText = "";
-let isDeleting = false;
-let typingSpeed = 60;
-let pause = 2000;
-
-let myInfo = [
-  {
-    name: " Juan de Santos",
-    phone: "+49 0178 5546224",
-    address: "Berlin, Germany",
-    email: "juanj.desantos@gmail.com",
-  },
-];
-
-let strengths = [
-  "Hard-working",
-  "Look for solutions",
-  "Dedicated",
-  "Enthusiastic",
-  "Methodical",
-  "Patient",
-  "Trustworthy",
-  "Team Player",
-  "Optimistic",
-];
-let weaknesses = [
-  "Non-native German/English language",
-  "Impulsive",
-  "Shy person in the beginning",
-  "Overthinking",
-  "Self-critical",
-  "Public speaking",
-];
-
-let projects = [
-  {
-    name: "Portfolio",
-    github: "",
-    screenshot: "",
-    website: "",
-  },
-  {
-    name: "Weather App",
-    github: "https://github.com/JotaDev09/WeatherApp.git",
-    screenshot: "/assets/img/weatherApp.png",
-    website: "https://jotadev09.github.io/WeatherApp/",
-  },
-  {
-    name: "El Pollo loco",
-    github: "https://github.com/JotaDev09/Crazy-Chicken.git",
-    screenshot: "/assets/img/polloLoco.jpg",
-    website: "https://jotadev09.github.io/Crazy-Chicken/",
-  },
-  {
-    name: "Instagram",
-    github: "https://github.com/JotaDev09/InstagramCopy.git",
-    screenshot: "/assets/img/instagram.png",
-    website: "https://jotadev09.github.io/InstagramCopy/",
-  },
-];
-
-let skills = [
-  {
-    type: "HTML",
-    icon: "assets/icons/html.png",
-  },
-  {
-    type: "CSS",
-    icon: "assets/icons/css.png",
-  },
-  {
-    type: "Javascript",
-    icon: "assets/icons/javascript.svg",
-  },
-  {
-    type: "React",
-    icon: "assets/icons/react.png",
-  },
-  {
-    type: "API",
-    icon: "assets/icons/api.png",
-  },
-  {
-    type: "Github",
-    icon: "assets/icons/githubBlack.svg",
-  },
-  {
-    type: "Scrum",
-    icon: "assets/icons/scrum.png",
-  },
-];
-
-let languages = [
-  {
-    language: "Spanish",
-    level: "Native",
-    flag: "assets/icons/spanien.png",
-  },
-  {
-    language: "German",
-    level: "B2",
-    flag: "assets/icons/deutschland.png",
-  },
-  {
-    language: "English",
-    level: "B1",
-    flag: "assets/icons/großbritannien.png",
-  },
-];
-
 /*
  * This function initializes some necessary functions when the page is loaded.
  */
@@ -123,11 +11,9 @@ function initIndex() {
  */
 function renderArrays() {
   renderInfo();
-  renderStrengthsCont();
-  renderWeaknessesCont();
+  renderAttributesCont();
   renderProjects();
   renderSkills();
-  renderlanguages();
 }
 
 /*
@@ -184,54 +70,6 @@ function renderInformation(newInfo) {
   <a id="aboutPhone" class="info_type">Phone: </a><span class="info_type">${newInfo["phone"]}</span><br>
   <a id="aboutAddress" class="info_type">Address: </a><span class="info_type">${newInfo["address"]}</span><br>
   <a id="aboutEmail" class="info_type">Email: <span class="info_type">${newInfo["email"]}</span></a>`;
-}
-
-/*
- * the function takes the array of the strengths and send it to the renderStrengths function
- */
-function renderStrengthsCont() {
-  let strengthsCont = document.getElementById("strengthsCont");
-  strengthsCont.innerHTML = "";
-  for (let adj = 0; adj < strengths.length; adj++) {
-    const strength = strengths[adj];
-    strengthsCont.innerHTML += renderStrengths(strength);
-  }
-}
-
-/**
- * the function renders the strengths to the HTML document
- *
- * @param {object} strength - the object that contains the strengths.
- * @returns {string} - A text template representing the HTML element of the language.
- */
-function renderStrengths(strength) {
-  return `
-  <a class="characteristics">${strength}</a>
-                        `;
-}
-
-/*
- * the function takes the array of the weaknesses and send it to the renderWeaknesses function
- */
-function renderWeaknessesCont() {
-  let weaknessesCont = document.getElementById("weaknessesCont");
-  weaknessesCont.innerHTML = "";
-  for (let adj = 0; adj < weaknesses.length; adj++) {
-    const weakness = weaknesses[adj];
-    weaknessesCont.innerHTML += renderWeaknesses(weakness);
-  }
-}
-
-/**
- * the function renders the weaknesses to the HTML document
- *
- * @param {object} weakness - the object that contains the weaknesses.
- * @returns {string} - A text template representing the HTML element of the language.
- */
-function renderWeaknesses(weakness) {
-  return `
-  <a class="characteristics">${weakness}</a>
-                        `;
 }
 
 /*
@@ -307,34 +145,6 @@ function renderSkill(newSkill) {
   <div class="skills column-center-center">
       <img class="skills_img" src="${newSkill["icon"]}">
       <a class="skills_type" id="skillsType">${newSkill["type"]}</a>
-  </div>
-  `;
-}
-
-/*
- * the function takes the array of the skills and send it to the renderSkill function
- */
-function renderlanguages() {
-  let languagesContainer = document.getElementById("languagesContainer");
-  languagesContainer.innerHTML = "";
-  for (let language = 0; language < languages.length; language++) {
-    let newLanguage = languages[language];
-    languagesContainer.innerHTML += renderLanguage(newLanguage);
-  }
-}
-
-/**
- * the function renders the skills to the HTML document
- *
- * @param {object} newLanguage - the object that contains the languages.
- * @returns {string} - A text template representing the HTML element of the language.
- */
-function renderLanguage(newLanguage) {
-  return `
-  <div class="skills column-center-center">
-  <img class="skills_img" src="${newLanguage["flag"]}">
-  <a class="skills_type" >${newLanguage["language"]}</a>
-  <a class="skills_type" >${newLanguage["level"]}</a>
   </div>
   `;
 }

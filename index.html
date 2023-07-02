@@ -32,11 +32,11 @@
                 <a id="menuProjects" class="menu_contain" href="#projectsSection">Projects</a>
                 <a id="menuSkills" class="menu_contain" href="#skillsSection">Skills</a>
             </div>
-        </div>
-        <div class="languages">
-            <a id="english" href="#" data-reload language="english" class="active ">EN</a>
-            <a id="german" href="#" data-reload language="german" class="">DE</a>
-            <a id="spanish" href="#" data-reload language="spanish" class="">ES</a>
+            <div class="languages">
+                <a id="english" href="#" data-reload language="english" class="active ">EN</a>
+                <a id="german" href="#" data-reload language="german" class="">DE</a>
+                <a id="spanish" href="#" data-reload language="spanish" class="">ES</a>
+            </div>
         </div>
     </head>
     <div id="fullPageContainer" class="fp_section">
@@ -109,14 +109,14 @@
         <section class="skills_section full-screen" id="skillsSection">
             <div class="all_skills">
                 <div class="skills_title_cont">
-                    <h3 class="skills_title">My Skills als Developer</h3><br>
+                    <h3 id="skillsTitle" class="skills_title">My Skills als Developer</h3><br>
                 </div>
                 <div class="skills_container" id="skillsContainer">
                 </div>
             </div>
             <div class="languages">
                 <div class="skills_title_cont">
-                    <h3 class="skills_title">Languages</h3><br>
+                    <h3 id="languagesTitle" class="skills_title">Languages</h3><br>
                 </div>
                 <div class="skills_container" id="languagesContainer">
                 </div>
@@ -124,6 +124,8 @@
         </section>
 
     </div>
+    <script src="assets/js/variables.js"></script>
+    <script src="assets/js/arrays.js"></script>
     <script src="assets/js/scriptIndex.js"></script>
     <script src="assets/js/languages.js"></script>
 </body>
