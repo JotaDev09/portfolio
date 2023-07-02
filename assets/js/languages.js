@@ -1,21 +1,14 @@
-function updateArrays(attr) {
-  (nameElement = document.getElementById("aboutName")),
-    (phoneElement = document.getElementById("aboutPhone")),
-    (addressElement = document.getElementById("aboutAddress"));
-
-  nameElement.textContent = data[attr].name;
-  phoneElement.textContent = data[attr].phone;
-  addressElement.textContent = data[attr].address;
-}
-
-// Agregar evento de clic a cada enlace
+/*
+ * Add click event to each link of the differents languages
+ */
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    console.log("click");
+    // Remove the "active" class from the previous active element and add it to the current element
     langs.querySelector(".active").classList.remove("active");
     link.classList.add("active");
 
     const attr = link.getAttribute("language");
+    // Update the content of various DOM elements with the corresponding values from the "data" object
 
     home.textContent = data[attr].menuHome;
     me.textContent = data[attr].menuMe;
@@ -24,6 +17,7 @@ links.forEach((link) => {
     follow.textContent = data[attr].followMe;
     title.textContent = data[attr].title;
     aboutME.textContent = data[attr].menuMe;
+    buttonCV.textContent = data[attr].buttonCV;
     description.textContent = data[attr].description;
     strength.textContent = data[attr].strengths;
     weakness.textContent = data[attr].weaknesses;
@@ -31,13 +25,18 @@ links.forEach((link) => {
     skillsTitle.textContent = data[attr].skillsTitle;
     languagesTitle.textContent = data[attr].languagesTitle;
 
+    // Call the function to render the attributes corresponding to the selected language
     renderAttributesCont(attr);
+
+    // Call the function to update the arrays corresponding to the selected language
     updateArrays(attr);
   });
 });
 
-/*
- * the function takes the array of the weaknesses and send it to the renderWeaknesses function
+/**
+ * The function renders the attributes based on the selected language.
+ *
+ * @param {object} attr - The selected language attributes.
  */
 function renderAttributesCont(attr) {
   let strengths = [];
@@ -61,6 +60,13 @@ function renderAttributesCont(attr) {
   renderAttributes(strengths, weaknesses, languages);
 }
 
+/**
+ * the function renders the attributes corresponding to the selected language.
+ *
+ * @param {object} strengths - the object that contains the strengths.
+ * @param {object} weaknesses - the object that contains the waknesses.
+ * @param {object} languages - the object that contains the languages.
+ */
 function renderAttributes(strengths, weaknesses, languages) {
   let strengthsHTML = "";
   let weaknessesHTML = "";
@@ -108,9 +114,9 @@ function renderWeaknesses(weakness) {
 }
 
 /**
- * the function renders the skills to the HTML document
+ * the function renders the languages to the HTML document
  *
- * @param {object} newLanguage - the object that contains the languages.
+ * @param {object} language - the object that contains the languages.
  * @returns {string} - A text template representing the HTML element of the language.
  */
 function renderLanguage(language) {
@@ -121,4 +127,19 @@ function renderLanguage(language) {
   <a class="skills_type" >${language["level"]}</a>
   </div>
   `;
+}
+
+/**
+ * the function renders the info
+ *
+ * @param {object} attr - The selected language attribute.
+ */
+function updateArrays(attr) {
+  (nameElement = document.getElementById("aboutName")),
+    (phoneElement = document.getElementById("aboutPhone")),
+    (addressElement = document.getElementById("aboutAddress"));
+
+  nameElement.textContent = data[attr].name;
+  phoneElement.textContent = data[attr].phone;
+  addressElement.textContent = data[attr].address;
 }

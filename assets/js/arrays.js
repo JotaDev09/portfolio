@@ -1,3 +1,4 @@
+// Personal Info
 let myInfo = [
   {
     name: " Juan de Santos",
@@ -7,6 +8,7 @@ let myInfo = [
   },
 ];
 
+//Projects
 let projects = [
   {
     name: "Portfolio",
@@ -34,6 +36,7 @@ let projects = [
   },
 ];
 
+// Skills
 let skills = [
   {
     type: "HTML",
@@ -65,6 +68,7 @@ let skills = [
   },
 ];
 
+// Differentes languages english
 let languagesEN = [
   {
     language: "Spanish",
@@ -83,6 +87,7 @@ let languagesEN = [
   },
 ];
 
+// Differentes languages german
 let languagesDE = [
   {
     language: "Spanisch",
@@ -101,6 +106,7 @@ let languagesDE = [
   },
 ];
 
+// Differentes languages spanish
 let languagesES = [
   {
     language: "Español",
@@ -119,6 +125,7 @@ let languagesES = [
   },
 ];
 
+// All the info in english, german and spanish
 let data = {
   english: {
     menuHome: "Home",
@@ -134,6 +141,7 @@ let data = {
     address: "Address: ",
     strengths: "Strengths",
     weaknesses: "Weaknesses",
+    buttonCV: "Download CV",
     projectsTitle: "Projects",
     skillsTitle: "My Skills als Developer",
     languagesTitle: "Languages",
@@ -152,6 +160,7 @@ let data = {
     address: "Anschrift: ",
     strengths: "Stärke",
     weaknesses: "Schwäche",
+    buttonCV: "Herunterladen CV",
     projectsTitle: "Projekte",
     skillsTitle: "Meine Fähigkeiten als Entwickler",
     languagesTitle: "Sprachen",
@@ -170,12 +179,14 @@ let data = {
     address: "Fortalezas: ",
     strengths: "Virtudes",
     weaknesses: "Debilidades",
+    buttonCV: "Descargar CV",
     projectsTitle: "Proyectos",
     skillsTitle: "Mis Habilidades como Desarrollador",
     languagesTitle: "Idiomas",
   },
 };
 
+// Strengths english
 let strengthsEN = [
   "Hard-working",
   "Look for solutions",
@@ -187,6 +198,8 @@ let strengthsEN = [
   "Team Player",
   "Optimistic",
 ];
+
+// Strengths german
 let strengthsDE = [
   "Fleißig",
   "Look for solutions",
@@ -199,6 +212,7 @@ let strengthsDE = [
   "Optimistic",
 ];
 
+// Strengths spanish
 let strengthsES = [
   "Trabajador insistente",
   "Look for solutions",
@@ -211,6 +225,7 @@ let strengthsES = [
   "Optimistic",
 ];
 
+// Weaknesses english
 let weaknessesEN = [
   "Non-native German/English language",
   "Impulsive",
@@ -220,6 +235,7 @@ let weaknessesEN = [
   "Public speaking",
 ];
 
+// Weaknesses german
 let weaknessesDE = [
   "Nicht muttersprachliches Deutsch/ Englisch Sprache",
   "Impulsive",
@@ -229,6 +245,7 @@ let weaknessesDE = [
   "Public speaking",
 ];
 
+// Weaknesses spanish
 let weaknessesES = [
   "Idioma alemán/inglés no nativo ",
   "Impulsive",
