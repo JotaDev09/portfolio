@@ -96,7 +96,7 @@ function renderProject(newProject) {
       <img class="projects_img" style="background-image: url('${newProject["screenshot"]}')" data-webSite="${newProject["website"]}" onClick="openWebSite()">
       <div class="projects_name_cont">
         <a class="projects_name" id="projectsName">${newProject["name"]}</a>
-        <img class="projects_github" src="/assets/icons/github.svg" data-github="${newProject["github"]}" onClick="openGithub()">
+        <img class="projects_github" src="assets/icons/github.svg" data-github="${newProject["github"]}" onClick="openGithub()">
       </div>
   </div>
   `;
