@@ -66,10 +66,10 @@ function renderInfo() {
  */
 function renderInformation(newInfo) {
   return `
-  <a id="aboutName" class="info_type">Name: </a><span class="info_type">${newInfo["name"]}</span><br>
-  <a id="aboutPhone" class="info_type">Phone: </a><span class="info_type">${newInfo["phone"]}</span><br>
-  <a id="aboutAddress" class="info_type">Address: </a><span class="info_type">${newInfo["address"]}</span><br>
-  <a id="aboutEmail" class="info_type">Email: <span class="info_type">${newInfo["email"]}</span></a>`;
+  <span class="info_type">${newInfo["name"]}</span><a class="info_linie">|<a/>
+  <span class="info_type">${newInfo["phone"]}</span><a class="info_linie">|<a/>
+  <span class="info_type">${newInfo["email"]}</span><a class="info_linie">|<a/>
+  <span class="info_type">${newInfo["address"]}</span><br>`;
 }
 
 /*

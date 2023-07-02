@@ -1,0 +1,58 @@
+.contact_cont {
+    height: 97vh;
+}
+
+.contact_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding-top: 0;
+}
+
+.info_container {
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.info_type {
+    font-size: 20px;
+    color: #2A2A79;
+}
+
+.info_type span {
+    font-size: 17px;
+    color: #2A2A79;
+}
+
+.info_linie {
+    font-size: 30px;
+    height: 30px
+}
+
+.contact_social_network {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.contact_foot {
+    height: 3vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.design_by {
+    text-decoration: none;
+    color: black;
+}
+
+.attributions {
+    text-decoration: none;
+    color: black;
+}

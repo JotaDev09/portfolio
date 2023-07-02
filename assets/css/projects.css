@@ -1,23 +1,28 @@
 /*projects container*/
 .projects_section {
-    background-color: #F5F5F5;
+    background-color: #2A2A79;
 }
 
 .projects_title_cont {
+    width: 100%;
     padding-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .projects_title {
     font-size: 50px;
-    color: #2A2A79;
+    color: #F5F5F5;
 }
 
 .projects_container {
+    width: 100%;
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -31,11 +36,12 @@
     background: center;
     background-size: cover;
     cursor: pointer;
+    transition: width 2s, height 2s;
 }
 
 .projects_img:hover {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 .projects_name_cont {
@@ -45,7 +51,7 @@
 }
 
 .projects_name {
-    color: #2A2A79;
+    color: #F5F5F5;
     font-size: 17px;
 }
 

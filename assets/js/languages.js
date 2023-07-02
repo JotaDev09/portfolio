@@ -27,9 +27,6 @@ links.forEach((link) => {
 
     // Call the function to render the attributes corresponding to the selected language
     renderAttributesCont(attr);
-
-    // Call the function to update the arrays corresponding to the selected language
-    updateArrays(attr);
   });
 });
 
@@ -127,19 +124,4 @@ function renderLanguage(language) {
   <a class="skills_type" >${language["level"]}</a>
   </div>
   `;
-}
-
-/**
- * the function renders the info
- *
- * @param {object} attr - The selected language attribute.
- */
-function updateArrays(attr) {
-  (nameElement = document.getElementById("aboutName")),
-    (phoneElement = document.getElementById("aboutPhone")),
-    (addressElement = document.getElementById("aboutAddress"));
-
-  nameElement.textContent = data[attr].name;
-  phoneElement.textContent = data[attr].phone;
-  addressElement.textContent = data[attr].address;
 }

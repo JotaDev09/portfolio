@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="assets/icons/white.png">
     <title>JotaDev</title>
@@ -13,7 +16,8 @@
     <link rel="stylesheet" href="assets/css/head.css">
     <link rel="stylesheet" href="assets/css/aboutme.css">
     <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="assets/css/skillsSection.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 
 
 </head>
@@ -21,7 +25,7 @@
 <body onload="initIndex()">
     <!--Header-->
 
-    <head class="head_container">
+    <div class="head_container">
         <div class="head_logo_menu">
             <div class="head_logo">
                 <img class="logo" src="assets/img/original.png">
@@ -31,6 +35,7 @@
                 <a id="menuMe" class="menu_contain" href="#aboutMeSection">About me</a>
                 <a id="menuProjects" class="menu_contain" href="#projectsSection">Projects</a>
                 <a id="menuSkills" class="menu_contain" href="#skillsSection">Skills</a>
+                <a id="menucontact" class="menu_contain" href="#contactSection">Contact</a>
             </div>
             <div class="languages">
                 <a id="english" href="#" data-reload language="english" class="active ">EN</a>
@@ -38,21 +43,21 @@
                 <a id="spanish" href="#" data-reload language="spanish" class="">ES</a>
             </div>
         </div>
-    </head>
+    </div>
     <div id="fullPageContainer" class="fp_section">
         <!--home section-->
-        <section class="full-screen home_container space-around-flex-start" id="homeSection">
-            <div class="head_languages">
-
-            </div>
+        <section class="full-screen home_container space-around-flex-start video-section" id="homeSection">
+            <video autoplay muted loop id="video-background">
+                <source src="assets/video/video.mp4" type="video/mp4">
+            </video>
             <div class="title_portfolio center-center">
                 <a class="title">I'm </a>&nbsp;&nbsp;&nbsp;<span class="title" id="typed-text"></span>
             </div>
             <div class="home_social_network column-center-center">
                 <span id="followMe" class="social_network">FOLLOW ME</span>
-                <img src="assets/icons/blau_linie.png" class="sozial_line">
+                <img src="assets/icons/white_linie.png" class="sozial_line">
                 <a href="https://github.com/JotaDev09" target="_blank">
-                    <img src="assets/icons/github.svg" class="social_icon_g"></a>
+                    <img src="assets/icons/githubWhite.png" class="social_icon_g"></a>
                 <a href="https://www.linkedin.com/in/juan-de-santos-a98207275" target="_blank">
                     <img src="assets/icons/linkedin.svg" class="social_icon_l"></a>
                 <a href="https://twitter.com/JotaSG9" target="_blank">
@@ -71,7 +76,7 @@
                 </div>
                 <div class="aboutme_resum">
                     <div class="about_me_description">
-                        <a id="description" class="aboutme_text">I'm a Junior Front End developer from Spain, currently
+                        <a id="description" class="aboutme_text">I'm a Junior Front-End developer from Spain, currently
                             residing in
                             Germany since 2018, with a background in other kind of works. In 2022, a decision was made
                             to embrace new challenges and explore the world of programming. The process of learning
@@ -79,7 +84,6 @@
                             fulfillment. Seeking the opportunity to work as a professional programmer, previous
                             experience in project development has been gained.</a>
                     </div>
-                    <div class="info_container" id="infoContainer"></div>
                 </div>
                 <div class="aboutme_characteristics">
                     <div class="aboutme_strengths">
@@ -128,6 +132,35 @@
             </div>
         </section>
 
+        <!--projects section-->
+        <section class="contact_section full-screen" id="contactSection">
+            <div class="contact_cont">
+                <div class="info_container" id="infoContainer"></div>
+                <div class="contact_social_network">
+                    <a href="https://github.com/JotaDev09" target="_blank">
+                        <img src="assets/icons/github.svg" class="social_icon_g"></a>
+                    <a href="https://www.linkedin.com/in/juan-de-santos-a98207275" target="_blank">
+                        <img src="assets/icons/linkedin.svg" class="social_icon_l"></a>
+                    <a href="https://twitter.com/JotaSG9" target="_blank">
+                        <img src="assets/icons/twitter.svg" class="social_icon_t"></a>
+                </div>
+            </div>
+            <div class="contact_foot">
+                <div class="design_for">
+                    <a>Website design by&nbsp<a class="design_by" href="https://www.linkedin.com/in/alexcoconut/"
+                            target="_blank">Alex de
+                            Santos</a>&nbspand
+                        programmed by&nbsp<a class="design_by"
+                            href="https://www.linkedin.com/in/juan-de-santos-a98207275/" target="_blank">Juan de
+                            Santos</a>.</a>
+                </div>
+                <div>
+                    <a class="attributions" target="_blank" href="attributions.html">Ver atribuciones</a>
+                </div>
+            </div>
+        </section>
+
+
     </div>
     <script src="assets/js/variables.js"></script>
     <script src="assets/js/arrays.js"></script>
@@ -139,6 +172,7 @@
 
 <!--
     Atributions
+    <0>Pressmaster<0>
     <a target="_blank" href="https://icons8.com/icon/xuvGCOXi8Wyg/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/3tC9EQumUAuq/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/5MQ0gPAYYx7a/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

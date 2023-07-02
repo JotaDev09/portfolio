@@ -2,6 +2,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat';
 }
 
 /*home container*/
@@ -13,24 +14,26 @@ body {
     width: 100%;
     height: 100%;
     margin-top: -115px;
+    z-index: 10;
 }
 
 .title {
     font-size: 50px;
-    color: #2A2A79;
+    color: white;
 }
 
 .home_social_network {
     padding: 20px;
     height: 100%;
     margin-top: -115px;
+    z-index: 10;
 }
 
 .social_network {
     transform: rotate(90deg);
-    width: 119px;
+    width: 140px;
     font-size: 20px;
-    color: #2A2A79;
+    color: white;
 }
 
 .sozial_line {
@@ -55,4 +58,21 @@ body {
     width: 30px;
     cursor: pointer;
     padding: 10px;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -1,12 +1,11 @@
 /*about me container*/
 .about_me_section {
-    background-color: #2A2A79;
+    background-color: #F5F5F5;
     display: flex;
 }
 
 .foto_portfolio {
-    padding: 50px;
-    padding-top: 110px;
+    padding: 40px 40px;
 }
 
 .foto_princ {
@@ -18,12 +17,12 @@
 .aboutme_contain {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding-left: 40px;
 }
 
 .aboutme_title {
     font-size: 50px;
-    color: #F5F5F5;
+    color: #2A2A79;
 }
 
 .about_me_description {
@@ -32,23 +31,13 @@
 
 .aboutme_text {
     font-size: 20px;
-    color: #F5F5F5;
+    color: #2A2A79;
 }
 
 .aboutme_resum {
     display: flex;
     width: 900px;
     gap: 50px;
-}
-
-.info_type {
-    font-size: 20px;
-    color: #F5F5F5;
-}
-
-.info_type span {
-    font-size: 17px;
-    color: #F5F5F5;
 }
 
 .aboutme_characteristics {
@@ -62,7 +51,7 @@
 
 .characteristics_title {
     font-size: 25px;
-    color: #F5F5F5;
+    color: #2A2A79;
 }
 
 .characteristics_container {
@@ -73,7 +62,7 @@
 
 .characteristics {
     font-size: 20px;
-    color: #F5F5F5;
+    color: #2A2A79;
 }
 
 .new_buttonCV {
