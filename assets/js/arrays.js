@@ -110,10 +110,10 @@ let data = {
   },
   spanish: {
     menuHome: "INICIO",
-    menuMe: "SOY",
+    menuMe: "SOBRE MI",
     menuProjects: "PROYECTOS",
     menucontact: "CONTACTO",
-    title: "Yo soy",
+    title: "SOY",
     followMe: "SÍGUEME",
     hello: "HOLA,",
     description:

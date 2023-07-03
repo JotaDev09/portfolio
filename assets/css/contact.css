@@ -1,4 +1,6 @@
 .contact_cont {
+    padding-top: 90px;
+    padding-bottom: 90px;
     height: 97%;
 }
 
@@ -19,7 +21,7 @@
 }
 
 .info_type {
-    font-size: 20px;
+    font-size: 17px;
     color: #2A2A79;
     text-decoration: none;
 }
@@ -43,7 +45,7 @@
 }
 
 .contact_foot {
-    height: 3%;
+    height: 8px;
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -53,6 +55,7 @@
 .design_by {
     text-decoration: none;
     color: black;
+    font-size: 10px;
 }
 
 .design_by:hover {
@@ -60,10 +63,19 @@
 }
 
 .attributions {
+    font-size: 10px;
     text-decoration: none;
     color: black;
 }
 
 .attributions:hover {
     color: #00CFFF;
+}
+
+.design {
+    font-size: 10px;
+}
+
+.design_ {
+    font-size: 10px;
 }

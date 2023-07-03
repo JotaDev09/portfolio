@@ -2,15 +2,21 @@
 .about_me_section {
     background-color: #F5F5F5;
     display: flex;
+    width: 100vw;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .foto_portfolio {
-    padding: 40px 40px;
+    width: 300px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .foto_princ {
-    width: 115%;
-    height: 33%;
+    width: 300px;
     border-radius: 100px;
 }
 
@@ -18,7 +24,6 @@
     display: flex;
     flex-direction: column;
     padding-left: 100px;
-    padding-top: 40px;
 }
 
 .aboutme_title {
@@ -40,52 +45,6 @@
     display: flex;
     width: 730px;
     padding-top: 7px;
-}
-
-.aboutme_characteristics {
-    padding-top: 50px;
-    display: flex;
-}
-
-.aboutme_strengths {
-    width: 365px;
-}
-
-.characteristics_title {
-    font-size: 25px;
-    color: #00CFFF;
-}
-
-.characteristics_container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    gap: 17px;
-}
-
-.characteristics {
-    font-size: 15px;
-    color: #2A2A79;
-}
-
-.languages {
-    width: 365px;
-}
-
-.languages_container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    gap: 17px;
-}
-
-.languages_cont {
-    display: flex;
-    gap: 20px;
-}
-
-.languages_cont a {
-    width: 100px;
 }
 
 .new_buttonCV {
@@ -111,7 +70,7 @@
 /*knowledge container*/
 .all_knowledge {
     width: 730px;
-    padding-top: 80px;
+    padding-top: 115px;
 }
 
 .knowledge_title_cont {

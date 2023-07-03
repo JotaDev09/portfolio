@@ -1,12 +1,8 @@
-.full-screen {
-    width: 100vw;
-    height: 90vh;
-    padding-top: 115px;
-}
-
-.home_screen {
-    width: 100vw;
-    height: 100vh;
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
 }
 
 .flex-center-center {
