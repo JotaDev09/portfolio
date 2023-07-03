@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.attributions {
+    padding: 50px;
+}
+
+.attributions_title {
+    font-size: 25px;
+    color: #00CFFF;
+}
+
+.li {
+    font-size: 17px;
+    color: #2A2A79;
+    ;
+}

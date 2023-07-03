@@ -17,7 +17,6 @@
 
 .foto_princ {
     width: 300px;
-    border-radius: 100px;
 }
 
 .aboutme_contain {
@@ -70,7 +69,7 @@
 /*knowledge container*/
 .all_knowledge {
     width: 730px;
-    padding-top: 115px;
+    padding-top: 53px;
 }
 
 .knowledge_title_cont {
@@ -86,12 +85,12 @@
 
 .knowledge_container {
     width: 100%;
-    padding-top: 40px;
+    padding-top: 15px;
 }
 
 .knowledge {
     width: 104px;
-    height: 120px;
+    height: 107px;
     gap: 30px;
 }
 

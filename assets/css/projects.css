@@ -1,6 +1,6 @@
 /*projects container*/
 .projects_section {
-    background-color: #2A2A79;
+    background-color: rgb(238, 238, 238);
     padding-top: 90px;
     padding-bottom: 90px;
     width: 100vw;
@@ -48,7 +48,7 @@
 }
 
 .projects_name {
-    color: #fff;
+    color: #2A2A79;
     font-size: 15px;
     font-weight: 200;
 }
