@@ -13,7 +13,7 @@ function renderArrays() {
   renderInfo();
   renderAttributesCont();
   renderProjects();
-  renderSkills();
+  renderKnowledges();
 }
 
 /*
@@ -67,8 +67,8 @@ function renderInfo() {
 function renderInformation(newInfo) {
   return `
   <span class="info_type">${newInfo["name"]}</span><a class="info_linie">|<a/>
-  <span class="info_type">${newInfo["phone"]}</span><a class="info_linie">|<a/>
-  <span class="info_type">${newInfo["email"]}</span><a class="info_linie">|<a/>
+  <a class="info_type" href="tel:+491786082868">${newInfo["phone"]}</a><a class="info_linie">|<a/>
+  <a class="info_type" href="mailto:juanj.desantos@gmail.com">${newInfo["email"]}</a><a class="info_linie">|<a/>
   <span class="info_type">${newInfo["address"]}</span><br>`;
 }
 
@@ -123,28 +123,27 @@ function openGithub() {
 }
 
 /*
- * the function takes the array of the skills and send it to the renderSkill function
+ * the function takes the array of the newKnowledge and send it to the renderSkill function
  */
-function renderSkills() {
-  let skillsContainer = document.getElementById("skillsContainer");
-  skillsContainer.innerHTML = "";
-  for (let skill = 0; skill < skills.length; skill++) {
-    let newSkill = skills[skill];
-    skillsContainer.innerHTML += renderSkill(newSkill);
+function renderKnowledges() {
+  let knowledgeContainer = document.getElementById("knowledgeContainer");
+  knowledgeContainer.innerHTML = "";
+  for (let knowledge = 0; knowledge < knowledges.length; knowledge++) {
+    let newKnowledge = knowledges[knowledge];
+    knowledgeContainer.innerHTML += renderKnowledge(newKnowledge);
   }
 }
-
 /**
- * the function renders the skills to the HTML document
+ * the function renders the newKnowledges to the HTML document
  *
- * @param {object} newSkill - the object that contains the skills.
- * @returns {string} - A text template representing the HTML element of the skill.
+ * @param {object} newKnowledge - the object that contains the newKnowledges.
+ * @returns {string} - A text template representing the HTML element of the newKnowledge.
  */
-function renderSkill(newSkill) {
+function renderKnowledge(newKnowledge) {
   return `
-  <div class="skills column-center-center">
-      <img class="skills_img" src="${newSkill["icon"]}">
-      <a class="skills_type" id="skillsType">${newSkill["type"]}</a>
+  <div class="knowledge column-center-center">
+      <img class="knowledge_img" src="${newKnowledge["icon"]}">
+      <a class="knowledge_type" id="knowledgeType">${newKnowledge["type"]}</a>
   </div>
   `;
 }

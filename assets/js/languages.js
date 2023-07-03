@@ -13,16 +13,15 @@ links.forEach((link) => {
     home.textContent = data[attr].menuHome;
     me.textContent = data[attr].menuMe;
     project.textContent = data[attr].menuProjects;
-    skill.textContent = data[attr].menuSkills;
+    skill.textContent = data[attr].menuknowledge;
     follow.textContent = data[attr].followMe;
     title.textContent = data[attr].title;
-    aboutME.textContent = data[attr].menuMe;
+    aboutME.textContent = data[attr].hello;
     buttonCV.textContent = data[attr].buttonCV;
     description.textContent = data[attr].description;
     strength.textContent = data[attr].strengths;
-    weakness.textContent = data[attr].weaknesses;
     projectsT.textContent = data[attr].projectsTitle;
-    skillsTitle.textContent = data[attr].skillsTitle;
+    knowledgeTitle.textContent = data[attr].knowledgeTitle;
     languagesTitle.textContent = data[attr].languagesTitle;
     attributions.textContent = data[attr].attributions;
     design_.textContent = data[attr].design_;
@@ -98,10 +97,9 @@ function renderStrength(strength) {
  */
 function renderLanguage(language) {
   return `
-  <div class="skills column-center-center">
-  <img class="skills_img" src="${language["flag"]}">
-  <a class="skills_type" >${language["language"]}</a>
-  <a class="skills_type" >${language["level"]}</a>
+  <div class="languages_cont">
+  <a class="characteristics" >${language["language"]}</a>
+  <a class="characteristics" >${language["level"]}</a>
   </div>
   `;
 }

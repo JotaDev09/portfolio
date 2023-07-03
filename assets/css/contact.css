@@ -21,14 +21,17 @@
 .info_type {
     font-size: 20px;
     color: #2A2A79;
+    text-decoration: none;
 }
 
 .info_type span {
     font-size: 17px;
     color: #2A2A79;
+    text-decoration: none;
 }
 
 .info_linie {
+    color: #00CFFF;
     font-size: 30px;
     height: 30px
 }
@@ -52,7 +55,15 @@
     color: black;
 }
 
+.design_by:hover {
+    color: #00CFFF
+}
+
 .attributions {
     text-decoration: none;
     color: black;
+}
+
+.attributions:hover {
+    color: #00CFFF;
 }
