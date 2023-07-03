@@ -68,61 +68,13 @@ let knowledges = [
   },
 ];
 
-// Differentes languages english
-let languagesEN = [
-  {
-    language: "Spanish",
-    level: "Native",
-  },
-  {
-    language: "German",
-    level: "B2",
-  },
-  {
-    language: "English",
-    level: "B1",
-  },
-];
-
-// Differentes languages german
-let languagesDE = [
-  {
-    language: "Spanisch",
-    level: "Muttersprachler",
-  },
-  {
-    language: "Deutsch",
-    level: "B2",
-  },
-  {
-    language: "Englisch",
-    level: "B1",
-  },
-];
-
-// Differentes languages spanish
-let languagesES = [
-  {
-    language: "Español",
-    level: "Nativo",
-  },
-  {
-    language: "Alemán",
-    level: "B2",
-  },
-  {
-    language: "Inglés",
-    level: "B1",
-  },
-];
-
 // All the info in english, german and spanish
 let data = {
   english: {
     menuHome: "HOME",
     menuMe: "ABOUT ME",
     menuProjects: "PROJECTS",
-    menuknowledge: "KNOWLEDGE",
+    menucontact: "CONTACT",
     title: "I'M",
     followMe: "FOLLOW ME",
     hello: "HELLO,",
@@ -141,7 +93,7 @@ let data = {
     menuHome: "HOME",
     menuMe: "ÜBER MICH",
     menuProjects: "PROJEKTE",
-    menuknowledge: "KENNTNISSE",
+    menucontact: "KONTAKT",
     title: "ICH BIN",
     followMe: "FOLGE MIR",
     hello: "HALLO,",
@@ -160,7 +112,7 @@ let data = {
     menuHome: "INICIO",
     menuMe: "SOY",
     menuProjects: "PROYECTOS",
-    menuknowledge: "HABILIDADES",
+    menucontact: "CONTACTO",
     title: "Yo soy",
     followMe: "SÍGUEME",
     hello: "HOLA,",
@@ -176,36 +128,3 @@ let data = {
     attributions: "Atribuciones",
   },
 };
-
-// Strengths english
-let strengthsEN = [
-  "Hard-working",
-  "Look for solutions",
-  "Dedicated",
-  "Enthusiastic",
-  "Methodical",
-  "Trustworthy",
-  "Team Player",
-];
-
-// Strengths german
-let strengthsDE = [
-  "Fleißig",
-  "Lösungsorientiert",
-  "Engagiert",
-  "Begeistert",
-  "Methodisch",
-  "Vertrauenwürdig",
-  "Team-Player",
-];
-
-// Strengths spanish
-let strengthsES = [
-  "Trabajador insistente",
-  "Orientado a soluciones",
-  "Comprometido",
-  "Entusiasta",
-  "Metódico",
-  "Confiable",
-  "Trabajador en equipo",
-];

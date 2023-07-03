@@ -5,27 +5,23 @@
 
 .projects_title_cont {
     width: 100%;
-    padding-top: 40px;
     display: flex;
     justify-content: center;
 }
 
 .projects_title {
-    font-size: 50px;
+    font-size: 25px;
     color: #00CFFF;
 }
 
 .projects_container {
     width: 100%;
-    padding: 50px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 90px;
     gap: 50px;
 }
 
 .projects {
-    gap: 15px;
+    gap: 40px;
 }
 
 .projects_img {
@@ -49,8 +45,9 @@
 }
 
 .projects_name {
-    color: #00CFFF;
-    font-size: 17px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
 }
 
 .projects_github {

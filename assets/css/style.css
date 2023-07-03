@@ -1,8 +1,12 @@
 .full-screen {
     width: 100vw;
-    height: 100vh;
-    scroll-snap-align: start;
+    height: 90vh;
     padding-top: 115px;
+}
+
+.home_screen {
+    width: 100vw;
+    height: 100vh;
 }
 
 .flex-center-center {
@@ -48,7 +52,19 @@
     justify-content: space-evenly;
 }
 
+.wrap-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .fp_section {
     height: 100vh;
     margin-top: 115px;
+}
+
+@media (width < 800px) {
+    .fp_section {
+        margin-top: 90px;
+    }
 }

@@ -13,7 +13,6 @@ body {
 .title_portfolio {
     width: 100%;
     height: 100%;
-    margin-top: -115px;
     z-index: 1;
 }
 
@@ -27,7 +26,6 @@ body {
 .home_social_network {
     padding: 20px;
     height: 100%;
-    margin-top: -115px;
     padding-right: 54px;
     z-index: 1
 }
@@ -78,4 +76,48 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (width < 1200px) {
+    .home_social_network {
+        padding-right: 0;
+    }
+}
+
+@media (width < 1000px) {
+    .home_container {
+        flex-direction: column;
+    }
+
+    .home_social_network {
+        flex-direction: initial !important;
+        padding: 0;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .social_network {
+        transform: rotate(0deg);
+    }
+
+    .sozial_line {
+        transform: rotate(225deg);
+        margin-top: 6px;
+    }
+
+    .title_portfolio {
+        align-items: self-end !important;
+    }
+}
+
+@media(width < 800px) {
+    .title_portfolio {
+        flex-direction: column;
+        justify-content: flex-end !important;
+        align-items: center !important;
+    }
+
+    .title {
+        font-size: 45px;
+    }
 }

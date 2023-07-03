@@ -94,7 +94,6 @@
 }
 
 .buttonCV {
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Montserrat';
@@ -107,4 +106,42 @@
 
 .buttonCV:hover {
     border: 1px solid #00CFFF;
+}
+
+/*knowledge container*/
+.all_knowledge {
+    width: 730px;
+    padding-top: 80px;
+}
+
+.knowledge_title_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.knowledge_title {
+    font-size: 25px;
+    color: #00CFFF;
+}
+
+.knowledge_container {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.knowledge {
+    width: 104px;
+    height: 120px;
+    gap: 30px;
+}
+
+.knowledge_img {
+    width: 60px;
+}
+
+.knowledge_type {
+    color: #2A2A79;
+    font-size: 15px;
+    font-weight: 200;
 }

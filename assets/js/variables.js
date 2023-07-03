@@ -7,21 +7,19 @@ let typingSpeed = 60;
 let pause = 2000;
 
 // Variables storing the titles to be translated on the website
-let langs = document.querySelector(".languages");
-let links = document.querySelectorAll(".languages a"),
+let langs = document.querySelector(".head_languages");
+let links = document.querySelectorAll(".head_languages a"),
   home = document.getElementById("menuHome"),
   me = document.getElementById("menuMe"),
   project = document.getElementById("menuProjects"),
+  menucontact = document.getElementById("menucontact"),
   skill = document.getElementById("menuSkills"),
   title = document.querySelector(".title"),
   follow = document.getElementById("followMe"),
   aboutME = document.querySelector(".aboutme_title"),
   buttonCV = document.querySelector(".buttonCV"),
   description = document.getElementById("description"),
-  strength = document.getElementById("strengths"),
   projectsT = document.querySelector(".projects_title"),
-  knowledgeTitle = document.getElementById("knowledgeTitle"),
-  languagesTitle = document.getElementById("languagesTitle"),
   attributions = document.querySelector(".attributions"),
   design_ = document.querySelector(".design_"),
   design = document.querySelector(".design");

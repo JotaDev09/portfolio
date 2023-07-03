@@ -11,12 +11,11 @@
     <link rel="icon" type="image/icon" href="assets/icons/white.png">
     <title>JotaDev</title>
 
-    <link rel="stylesheet" href="assets/css/styleIndex.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/head.css">
     <link rel="stylesheet" href="assets/css/aboutme.css">
     <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="assets/css/knowledge.css">
     <link rel="stylesheet" href="assets/css/contact.css">
 
 
@@ -30,14 +29,14 @@
             <div class="head_logo">
                 <img class="logo" src="assets/img/original.png">
             </div>
-            <div class="head_menu">
-                <a id="menuHome" class="menu_contain" href="#homeSection">HOME</a>
-                <a id="menuMe" class="menu_contain" href="#aboutMeSection">ABOUT ME</a>
-                <a id="menuProjects" class="menu_contain" href="#projectsSection">PROJECTS</a>
-                <a id="menuSkills" class="menu_contain" href="#skillsSection">KNOWLEDGE</a>
-                <a id="menucontact" class="menu_contain" href="#contactSection">CONTACT</a>
+            <button id="headButton" class="head_button">MENU</button>
+            <div class="head_menu" id="headLinks">
+                <a id="menuHome" class="menu_contain menu-link" href="#homeSection" class="activ">HOME</a>
+                <a id="menuMe" class="menu_contain menu-link" href="#aboutMeSection">ABOUT ME</a>
+                <a id="menuProjects" class="menu_contain menu-link" href="#projectsSection">PROJECTS</a>
+                <a id="menucontact" class="menu_contain menu-link" href="#contactSection">CONTACT</a>
             </div>
-            <div class="languages">
+            <div class="head_languages">
                 <a id="english" href="#" data-reload language="english" class="active ">EN</a>
                 <a id="german" href="#" data-reload language="german" class="">DE</a>
                 <a id="spanish" href="#" data-reload language="spanish" class="">ES</a>
@@ -46,7 +45,7 @@
     </div>
     <div id="fullPageContainer" class="fp_section">
         <!--home section-->
-        <section class="video-section home_container full-screen  space-around-flex-start" id="homeSection">
+        <section class="video-section home_container home_screen  space-around-flex-start" id="homeSection">
             <video autoplay muted loop id="video-background">
                 <source src="assets/video/video.mp4" type="video/mp4">
             </video>
@@ -93,37 +92,23 @@
                             projects and am looking for the opportunity to work as a professional programmer.</a>
                     </div>
                 </div>
-                <div class="aboutme_characteristics">
-                    <div class="aboutme_strengths">
-                        <a id="strengths" class="characteristics_title">SKILLS</a>
-                        <div class="characteristics_container" id="strengthsCont"></div>
+                <div class="all_knowledge">
+                    <div class="knowledge_title_cont">
+                        <a id="knowledgeTitle" class="knowledge_title">KNOWLEDGE</a><br>
                     </div>
-                    <div class="aboutme_languages">
-                        <a id="languagesTitle" class="characteristics_title">LANGUAGES</a>
-                        <div class="languages_container" id="languagesContainer"></div>
+                    <div class="knowledge_container wrap-center" id="knowledgeContainer">
                     </div>
                 </div>
             </div>
         </section>
 
         <!--projects section-->
-        <section class="full-screen projects_section" id="projectsSection">
+        <section class="full-screen projects_section column-center" id="projectsSection">
             <div class="all_projects">
                 <div class="projects_title_cont">
                     <a class="projects_title">PROJECTS</a><br>
                 </div>
-                <div class="projects_container" id="projectsContainer">
-                </div>
-            </div>
-        </section>
-
-        <!--projects section-->
-        <section class="knowledge_section full-screen" id="knowledgeSection">
-            <div class="all_knowledge">
-                <div class="knowledge_title_cont">
-                    <a id="knowledgeTitle" class="knowledge_title">KNOWLEDGE</a><br>
-                </div>
-                <div class="knowledge_container" id="knowledgeContainer">
+                <div class="projects_container wrap-center" id="projectsContainer">
                 </div>
             </div>
         </section>
