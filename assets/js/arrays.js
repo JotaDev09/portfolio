@@ -29,7 +29,13 @@ let projects = [
     website: "https://jotadev09.github.io/Crazy-Chicken/",
   },
   {
-    name: "Instagram",
+    name: "Pokédev",
+    github: "https://github.com/JotaDev09/Pokedev.git",
+    screenshot: "assets/img/pokedev.png",
+    website: "https://jotadev09.github.io/Pokedex/",
+  },
+  {
+    name: "Instaloper",
     github: "https://github.com/JotaDev09/InstagramCopy.git",
     screenshot: "assets/img/instagram.png",
     website: "https://jotadev09.github.io/InstagramCopy/",
