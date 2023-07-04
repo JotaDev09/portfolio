@@ -2,7 +2,7 @@
 let myInfo = [
   {
     name: " Juan de Santos",
-    phone: "+49 0178 5546224",
+    phone: "+49 0178 6082868",
     address: "Berlin, Germany",
     email: "juanj.desantos@gmail.com",
   },
@@ -37,7 +37,7 @@ let projects = [
   {
     name: "Instaloper",
     github: "https://github.com/JotaDev09/InstagramCopy.git",
-    screenshot: "assets/img/instagram.png",
+    screenshot: "assets/img/instaloper.png",
     website: "https://jotadev09.github.io/InstagramCopy/",
   },
   {

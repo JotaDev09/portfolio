@@ -22,6 +22,7 @@
 
 .logo {
     width: 100px;
+    cursor: pointer;
 }
 
 .head_menu {
