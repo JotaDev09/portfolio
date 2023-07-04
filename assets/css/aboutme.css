@@ -72,6 +72,10 @@
     padding-top: 53px;
 }
 
+.knowledge_responsive {
+    display: none;
+}
+
 .knowledge_title_cont {
     width: 100%;
     display: flex;
@@ -193,11 +197,85 @@
         gap: 8px;
     }
 
+    .knowledge_img {
+        width: 50px;
+    }
+}
+
+@media (width < 800px) {
+    .about_me_section {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .foto_portfolio {
+        width: 189px;
+        flex-basis: calc(30% - 10px);
+    }
+
+    .foto_princ {
+        width: 182px;
+    }
+
+    .buttonCV {
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    .aboutme_contain {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .aboutme_title {
+        font-size: 17px;
+    }
+
+    .aboutme_resum {
+        width: 370px;
+    }
+
+    .about_me_description {
+        width: 370px;
+    }
+
+    .aboutme_text {
+        font-size: 11px;
+    }
+
+    .all_knowledge {
+        display: none;
+    }
+
+    .knowledge_responsive {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        padding-top: 5px;
+    }
+
+    .knowledge_title_cont {
+        padding-bottom: 10px;
+    }
+
     .knowledge_title {
-        font-size: 22px;
+        font-size: 17px;
+    }
+
+    .knowledge_container {
+        padding-top: 5px;
+    }
+
+    .knowledge {
+        width: 74px;
+        height: 75px;
+        gap: 8px;
     }
 
     .knowledge_img {
-        width: 50px;
+        width: 40px;
+    }
+
+    .knowledge_type {
+        font-size: 11px;
     }
 }

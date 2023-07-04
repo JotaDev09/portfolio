@@ -95,9 +95,20 @@ function type() {
 function renderKnowledges() {
   let knowledgeContainer = document.getElementById("knowledgeContainer");
   knowledgeContainer.innerHTML = "";
+  let knowledgeContainerResp = document.getElementById(
+    "knowledgeContainerResp"
+  );
+  knowledgeContainerResp.innerHTML = "";
+
+  let maxWidth = window.innerWidth || document.documentElement.clientWidth;
+
   for (let knowledge = 0; knowledge < knowledges.length; knowledge++) {
     let newKnowledge = knowledges[knowledge];
-    knowledgeContainer.innerHTML += renderKnowledge(newKnowledge);
+    if (maxWidth < 800) {
+      knowledgeContainerResp.innerHTML += renderKnowledge(newKnowledge);
+    } else {
+      knowledgeContainer.innerHTML += renderKnowledge(newKnowledge);
+    }
   }
 }
 /**
