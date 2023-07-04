@@ -5,6 +5,13 @@ body {
 
 .attributions {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title_att {
+    padding-bottom: 20px;
 }
 
 .attributions_title {
@@ -12,8 +19,26 @@ body {
     color: #00CFFF;
 }
 
-.li {
+.attributions_text {
     font-size: 17px;
     color: #2A2A79;
-    ;
+}
+
+.attributions_list {
+    padding-top: 20PX;
+    padding-bottom: 20PX;
+}
+
+.attributions_list li {
+    font-size: 17px;
+    color: #2A2A79;
+}
+
+.attributions_list li a {
+    text-decoration: none;
+    color: #2A2A79;
+}
+
+.attributions_list li a:hover {
+    color: #00cfff;
 }
