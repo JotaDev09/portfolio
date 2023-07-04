@@ -39,6 +39,18 @@
     transform: rotate(135deg);
 }
 
+.social_icon_g {
+    width: 30px;
+}
+
+.social_icon_l {
+    width: 32px;
+}
+
+.social_icon_t {
+    width: 32px;
+}
+
 .contact_social_network {
     display: flex;
     justify-content: center;
@@ -106,6 +118,18 @@
     .info_type {
         font-size: 11px
     }
+
+    .social_icon_g {
+        width: 28px;
+    }
+
+    .social_icon_l {
+        width: 30px;
+    }
+
+    .social_icon_t {
+        width: 30px;
+    }
 }
 
 
@@ -147,6 +171,18 @@
         display: none;
     }
 
+    .social_icon_g {
+        width: 26px;
+    }
+
+    .social_icon_l {
+        width: 28px;
+    }
+
+    .social_icon_t {
+        width: 28px;
+    }
+
     .design {
         font-size: 8px;
     }
@@ -167,6 +203,18 @@
 @media (width < 460px) {
     .info_type {
         width: 150px;
+    }
+
+    .social_icon_g {
+        width: 24px;
+    }
+
+    .social_icon_l {
+        width: 26px;
+    }
+
+    .social_icon_t {
+        width: 26px;
     }
 }
 
