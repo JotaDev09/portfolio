@@ -79,7 +79,7 @@ let data = {
     followMe: "FOLLOW ME",
     hello: "HELLO,",
     description:
-      "I'm Jr. Front-End Developer from Spain, currently residing in Germany since 2018, with a background in others work fields. In 2022, I made the decision to embrace new challenges and explore the world of programming. The learning process of programming, which initially presented difficulties, unexpectedly revealed a source of joy and satisfaction. I've gained previous experience in developing my own projects and am looking for the opportunity to work as a professional programmer",
+      "I'm Jr. Front-End Developer from Spain, currently residing in Germany since 2018, with a background in others work fields. In 2022, I made the decision to embrace new challenges and explore the world of programming. The learning process of programming, which initially presented difficulties, unexpectedly revealed a source of joy and satisfaction. I've gained previous experience in developing my own projects and am looking for the opportunity to work as a professional programmer.",
     strengths: "SKILLS",
     buttonCV: "Download CV",
     projectsTitle: "PROJECTS",
@@ -98,7 +98,7 @@ let data = {
     followMe: "FOLGE MIR",
     hello: "HALLO,",
     description:
-      "Ich bin Junior Front-End Entwickler aus Spanien und lebe seit 2018 in Deutschland. Zuvor habe ich in anderen Bereichen gearbeitet. Im Jahr 2022 habe ich mich entschieden, neue Herausforderungen anzunehmen und die Welt der Programmierung zu erkunden. Der Lernprozess des Programmierens, der früher Schwierigkeiten verursachte, enthüllte unerwartet eine Quelle der Freude und Erfüllung. Auf der Suche nach der Möglichkeit, als professioneller Programmierer zu arbeiten, habe ich bereits Erfahrung in der Projektentwicklung gesammelt.",
+      "Ich bin ein Front-End Junior-Entwickler aus Spanien, der seit 2018 in Deutschland lebt. Obwohl meine bisherigen Erfahrungen andere Bereiche abdecken, habe ich mich 2022 entschlossen, neue Herausforderungen anzunehmen und in die Welt der Programmierung einzutauchen. Obwohl der Lernprozess anfangs schwierig war, entdeckte ich, dass das Programmieren eine unerwartete Quelle der Freude und Zufriedenheit ist. Ich habe Erfahrung in der Arbeit an meinen eigenen Projekten gesammelt und freue mich auf die Möglichkeit, als professioneller Programmierer zu arbeiten.",
     strengths: "STÄRKE",
     buttonCV: "CV Herunterladen",
     projectsTitle: "PROJEKTE",
@@ -117,7 +117,7 @@ let data = {
     followMe: "SÍGUEME",
     hello: "HOLA,",
     description:
-      "Soy desarrollador Front-End junior de España, actualmente resido en Alemania desde 2018, y cuento con experiencia en otros campos laborales. En 2022, tomé la decisión de abrazar nuevos desafíos y explorar el mundo de la programación. El proceso de aprendizaje de la programación, que en un principio presentaba dificultades, reveló inesperadamente una fuente de alegría y satisfacción. En busca de la oportunidad de trabajar como programador profesional, he adquirido experiencia previa en el desarrollo de proyectos.",
+      "Soy un desarrollador Front-End Junior de España que actualmente reside en Alemania desde 2018. Aunque mi experiencia previa abarca otros campos, en 2022 decidí aceptar nuevos desafíos y adentrarme en el mundo de la programación. A pesar de que el proceso de aprendizaje al principio presentaba dificultades, descubrí que la programación me brinda una fuente inesperada de alegría y satisfacción. He adquirido experiencia trabajando en mis propios proyectos y estoy ansioso por la oportunidad de trabajar como programador profesional.",
     strengths: "VIRTUDES",
     buttonCV: "Descargar CV",
     projectsTitle: "PROYECTOS",

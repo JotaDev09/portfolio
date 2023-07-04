@@ -131,7 +131,7 @@
     }
 
     .social_network {
-        width: 107px;
+        width: auto;
         font-size: 17px;
     }
 
@@ -154,7 +154,6 @@
     }
 
     .social_network {
-        width: 84px;
         font-size: 13px;
     }
 

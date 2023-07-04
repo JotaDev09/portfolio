@@ -261,10 +261,6 @@
         font-size: 17px;
     }
 
-    .knowledge_container {
-        padding-top: 5px;
-    }
-
     .knowledge {
         width: 74px;
         height: 75px;
@@ -277,5 +273,65 @@
 
     .knowledge_type {
         font-size: 11px;
+    }
+}
+
+@media (width < 600px) {
+    .about_me_section {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aboutme_contain {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .knowledge_responsive {
+        padding-top: 15px;
+    }
+
+    .knowledge {
+        width: 54px;
+    }
+
+    .knowledge_img {
+        width: 35px;
+    }
+}
+
+@media (width < 400px) {
+    .about_me_section {
+        padding: 90px 10px;
+    }
+
+    .aboutme_resum {
+        width: 305px;
+    }
+
+    .about_me_description {
+        width: 305px;
+    }
+
+    .knowledge_responsive {
+        padding-top: 15px;
+    }
+
+    .knowledge_container_resp {
+        gap: 13px;
+    }
+
+    .knowledge {
+        width: 54px;
+    }
+}
+
+@media (width < 340px) {
+    .aboutme_resum {
+        width: 210px;
+    }
+
+    .about_me_description {
+        width: 210px;
     }
 }
