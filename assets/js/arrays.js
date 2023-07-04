@@ -12,8 +12,8 @@ let myInfo = [
 let projects = [
   {
     name: "Portfolio",
-    github: "",
-    screenshot: "",
+    github: "https://github.com/JotaDev09/portfolio.git",
+    screenshot: "assets/img/portfolio.png",
     website: "",
   },
   {
@@ -33,6 +33,12 @@ let projects = [
     github: "https://github.com/JotaDev09/InstagramCopy.git",
     screenshot: "assets/img/instagram.png",
     website: "https://jotadev09.github.io/InstagramCopy/",
+  },
+  {
+    name: "Tic Tac Toe",
+    github: "https://github.com/JotaDev09/TicTacToe.git",
+    screenshot: "assets/img/Tic-tac-toe.png",
+    website: "https://jotadev09.github.io/TicTacToe/",
   },
 ];
 

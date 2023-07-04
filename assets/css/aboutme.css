@@ -149,6 +149,10 @@
 }
 
 @media(width < 1000px) {
+    .about_me_section {
+        padding: 60px 10px;
+    }
+
     .foto_portfolio {
         width: 239px;
     }
@@ -280,6 +284,8 @@
     .about_me_section {
         align-items: center;
         flex-direction: column;
+        padding: 40px 10px;
+
     }
 
     .aboutme_contain {

@@ -194,11 +194,11 @@ function renderInfo() {
  */
 function renderInformation(newInfo) {
   return `
-  <a class="info_type">${newInfo["name"]}</a>
+  <a class="info_type info_info">${newInfo["name"]}</a>
   <img class="info_linie" src="assets/icons/linieBlue.png"><img/>
   <a class="info_type" href="tel:+491786082868">${newInfo["phone"]}</a>
-  <img class="info_linie" src="assets/icons/linieBlue.png"><img/>
-  <a class="info_type" href="mailto:juanj.desantos@gmail.com">${newInfo["email"]}</a>
+  <img class="info_linie linie_600" src="assets/icons/linieBlue.png"><img/>
+  <a class="info_type info_info" href="mailto:juanj.desantos@gmail.com">${newInfo["email"]}</a>
   <img class="info_linie" src="assets/icons/linieBlue.png"><img/>
   <a class="info_type">${newInfo["address"]}</a>`;
 }
