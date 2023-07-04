@@ -14,7 +14,7 @@ let projects = [
     name: "Portfolio",
     github: "https://github.com/JotaDev09/portfolio.git",
     screenshot: "assets/img/portfolio.png",
-    website: "",
+    website: "https://jotadev09.github.io/portfolio/",
   },
   {
     name: "Weather App",

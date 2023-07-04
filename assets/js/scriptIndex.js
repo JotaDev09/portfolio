@@ -52,6 +52,7 @@ function setLanguages(attr) {
 function responsiveButtonMenu() {
   let headButton = document.getElementById("headButton");
   let headLinks = document.getElementById("headLinks");
+  let headMenu = document.getElementById("head_menu");
   let menuElements = document.getElementsByClassName("menu_contain");
 
   headButton.addEventListener("click", function () {
