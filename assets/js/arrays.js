@@ -32,7 +32,7 @@ let projects = [
     name: "Pokédev",
     github: "https://github.com/JotaDev09/Pokedev.git",
     screenshot: "assets/img/pokedev.png",
-    website: "https://jotadev09.github.io/Pokedex/",
+    website: "https://jotadev09.github.io/Pokedev/",
   },
   {
     name: "Instaloper",
@@ -87,11 +87,11 @@ let data = {
     menuMe: "ABOUT ME",
     menuProjects: "PROJECTS",
     menucontact: "CONTACT",
-    title: "I'M",
+    title: "I'M ",
     followMe: "FOLLOW ME",
     hello: "HELLO,",
     description:
-      "I'm Jr. Front-End Developer from Spain, currently residing in Germany since 2018, with a background in others work fields. In 2022, I made the decision to embrace new challenges and explore the world of programming. The learning process of programming, which initially presented difficulties, unexpectedly revealed a source of joy and satisfaction. I've gained previous experience in developing my own projects and am looking for the opportunity to work as a professional programmer.",
+      "I'm Jr. Front-End Developer from Spain, currently residing in Germany since 2018, with a background in others work fields. In 2022, I made the decision to embrace new challenges and explore the world of programming. The learning process, which initially presented difficulties, unexpectedly revealed a source of joy and satisfaction. I've gained previous experience in developing my own projects and am looking for the opportunity to work as a professional programmer.",
     strengths: "SKILLS",
     buttonCV: "Download CV",
     projectsTitle: "PROJECTS",
@@ -106,7 +106,7 @@ let data = {
     menuMe: "ÜBER MICH",
     menuProjects: "PROJEKTE",
     menucontact: "KONTAKT",
-    title: "ICH BIN",
+    title: "ICH BIN ",
     followMe: "FOLGE MIR",
     hello: "HALLO,",
     description:
@@ -125,7 +125,7 @@ let data = {
     menuMe: "SOBRE MI",
     menuProjects: "PROYECTOS",
     menucontact: "CONTACTO",
-    title: "SOY",
+    title: "SOY ",
     followMe: "SÍGUEME",
     hello: "HOLA,",
     description:

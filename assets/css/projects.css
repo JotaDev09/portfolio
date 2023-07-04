@@ -82,6 +82,10 @@
         gap: 20px;
     }
 
+    .projects_title {
+        font-size: 20px;
+    }
+
     .projects_img {
         transition: width 1s, height 1s;
         width: 170px;
@@ -111,7 +115,7 @@
         gap: 25px;
     }
 
-    .projects.projects_title {
+    .projects_title {
         font-size: 17px;
     }
 

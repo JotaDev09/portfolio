@@ -3,6 +3,8 @@
  */
 function initIndex() {
   type();
+  setLanguages();
+  responsiveButtonMenu();
   renderInfo();
   renderProjects();
   renderKnowledges();
@@ -18,28 +20,36 @@ links.forEach((link) => {
     link.classList.add("active");
 
     const attr = link.getAttribute("language");
-    // Update the content of various DOM elements with the corresponding values from the "data" object
 
-    home.textContent = data[attr].menuHome;
-    me.textContent = data[attr].menuMe;
-    project.textContent = data[attr].menuProjects;
-    menucontact.textContent = data[attr].menucontact;
-    follow.textContent = data[attr].followMe;
-    title.textContent = data[attr].title;
-    aboutME.textContent = data[attr].hello;
-    buttonCV.textContent = data[attr].buttonCV;
-    description.textContent = data[attr].description;
-    projectsT.textContent = data[attr].projectsTitle;
-    attributions.textContent = data[attr].attributions;
-    design_.textContent = data[attr].design_;
-    design.textContent = data[attr].design;
+    setLanguages(attr);
   });
 });
 
 /*
+ * Update the content of various DOM elements with the corresponding language from the "data" object.
+ */
+function setLanguages(attr) {
+  const languageData = data[attr] || data["english"];
+
+  home.textContent = languageData.menuHome;
+  me.textContent = languageData.menuMe;
+  project.textContent = languageData.menuProjects;
+  menucontact.textContent = languageData.menucontact;
+  follow.textContent = languageData.followMe;
+  title.textContent = languageData.title;
+  aboutME.textContent = languageData.hello;
+  buttonCV.textContent = languageData.buttonCV;
+  description.textContent = languageData.description;
+  projectsT.textContent = languageData.projectsTitle;
+  attributions.textContent = languageData.attributions;
+  design_.textContent = languageData.design_;
+  design.textContent = languageData.design;
+}
+
+/*
  * It generates a button specifically for the header when in responsive mode
  */
-document.addEventListener("DOMContentLoaded", function () {
+function responsiveButtonMenu() {
   let headButton = document.getElementById("headButton");
   let headLinks = document.getElementById("headLinks");
   let menuElements = document.getElementsByClassName("menu_contain");
@@ -55,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       headButton.classList.remove("open");
     });
   }
-});
+}
 
 /*
  * the function types the text of the title like a typewriter
