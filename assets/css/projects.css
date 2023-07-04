@@ -64,6 +64,13 @@
 
 }
 
+@media (width < 1470px) {
+    .projects {
+        flex-basis: calc(29%);
+    }
+}
+
+
 @media (width < 1000px) {
     .projects_section {
         padding-top: 60px;
