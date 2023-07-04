@@ -100,7 +100,7 @@ let data = {
     description:
       "Ich bin Junior Front-End Entwickler aus Spanien und lebe seit 2018 in Deutschland. Zuvor habe ich in anderen Bereichen gearbeitet. Im Jahr 2022 habe ich mich entschieden, neue Herausforderungen anzunehmen und die Welt der Programmierung zu erkunden. Der Lernprozess des Programmierens, der früher Schwierigkeiten verursachte, enthüllte unerwartet eine Quelle der Freude und Erfüllung. Auf der Suche nach der Möglichkeit, als professioneller Programmierer zu arbeiten, habe ich bereits Erfahrung in der Projektentwicklung gesammelt.",
     strengths: "STÄRKE",
-    buttonCV: "Herunterladen CV",
+    buttonCV: "CV Herunterladen",
     projectsTitle: "PROJEKTE",
     knowledgeTitle: "KENNTNISSE",
     languagesTitle: "SPRACHEN",

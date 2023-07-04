@@ -2,14 +2,14 @@
 .about_me_section {
     background-color: #F5F5F5;
     display: flex;
-    width: 100vw;
+    align-items: center;
+    justify-content: center;
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
 .foto_portfolio {
     width: 300px;
-    padding-left: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,4 +102,102 @@
     color: #2A2A79;
     font-size: 15px;
     font-weight: 200;
+}
+
+@media(width < 1200px) {
+    .foto_portfolio {
+        width: 282px;
+    }
+
+    .foto_princ {
+        width: 270px;
+    }
+
+    .about_me_section {
+        padding: 90px 10px;
+    }
+
+    .aboutme_contain {
+        padding-left: 20px;
+    }
+
+    .aboutme_resum {
+        width: 690px;
+        padding-top: 4px;
+    }
+
+    .about_me_description {
+        width: 690px;
+    }
+
+    .aboutme_text {
+        font-size: 16px;
+    }
+
+    .all_knowledge {
+        width: 690px;
+        padding-top: 34px;
+    }
+
+    .knowledge {
+        width: 98px;
+    }
+}
+
+@media(width < 1000px) {
+    .foto_portfolio {
+        width: 239px;
+    }
+
+    .foto_princ {
+        width: 232px;
+    }
+
+    .buttonCV {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .aboutme_title {
+        font-size: 20px;
+    }
+
+    .aboutme_resum {
+        width: 520px;
+    }
+
+    .about_me_description {
+        width: 520px;
+    }
+
+    .aboutme_text {
+        font-size: 13px;
+    }
+
+    .all_knowledge {
+        width: 520px;
+        padding-top: 26px;
+    }
+
+    .knowledge_title {
+        font-size: 20px;
+    }
+
+    .knowledge_container {
+        padding-top: 8px;
+    }
+
+    .knowledge {
+        width: 74px;
+        height: 75px;
+        gap: 8px;
+    }
+
+    .knowledge_title {
+        font-size: 22px;
+    }
+
+    .knowledge_img {
+        width: 50px;
+    }
 }
