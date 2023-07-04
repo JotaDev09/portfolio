@@ -307,9 +307,6 @@
 }
 
 @media (width < 400px) {
-    .about_me_section {
-        padding: 90px 10px;
-    }
 
     .aboutme_resum {
         width: 305px;
