@@ -21,9 +21,26 @@ links.forEach((link) => {
 
     const attr = link.getAttribute("language");
 
+    setButtons(attr);
     setLanguages(attr);
   });
 });
+
+function setButtons(attr) {
+  if (attr === "german") {
+    buttonDE.classList.remove("none");
+    buttonEN.classList.add("none");
+    buttonES.classList.add("none");
+  } else if (attr === "spanish") {
+    buttonES.classList.remove("none");
+    buttonEN.classList.add("none");
+    buttonDE.classList.add("none");
+  } else {
+    buttonEN.classList.remove("none");
+    buttonES.classList.add("none");
+    buttonDE.classList.add("none");
+  }
+}
 
 /*
  * Update the content of various DOM elements with the corresponding language from the "data" object.
@@ -38,7 +55,6 @@ function setLanguages(attr) {
   follow.textContent = languageData.followMe;
   title.textContent = languageData.title;
   aboutME.textContent = languageData.hello;
-  buttonCV.textContent = languageData.buttonCV;
   description.textContent = languageData.description;
   projectsT.textContent = languageData.projectsTitle;
   attributions.textContent = languageData.attributions;

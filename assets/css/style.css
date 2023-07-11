@@ -59,6 +59,10 @@ body {
     margin-top: 115px;
 }
 
+.none {
+    display: none;
+}
+
 @media (width < 800px) {
     .fp_section {
         margin-top: 90px;
