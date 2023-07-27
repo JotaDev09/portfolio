@@ -17,6 +17,12 @@ let projects = [
     website: "https://jotadev09.github.io/portfolio/",
   },
   {
+    name: "Library",
+    github: "https://github.com/JotaDev09/BookStore.git",
+    screenshot: "assets/img/library.png",
+    website: "https://jotadev09.github.io/BookStore/",
+  },
+  {
     name: "Weather App",
     github: "https://github.com/JotaDev09/WeatherApp.git",
     screenshot: "assets/img/weatherApp.png",
@@ -33,12 +39,6 @@ let projects = [
     github: "https://github.com/JotaDev09/Pokedev.git",
     screenshot: "assets/img/pokedev.png",
     website: "https://jotadev09.github.io/Pokedev/",
-  },
-  {
-    name: "Instaloper",
-    github: "https://github.com/JotaDev09/InstagramCopy.git",
-    screenshot: "assets/img/instaloper.png",
-    website: "https://jotadev09.github.io/InstagramCopy/",
   },
   {
     name: "Tic Tac Toe",
