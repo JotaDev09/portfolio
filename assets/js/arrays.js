@@ -20,7 +20,7 @@ let projects = [
     name: "Library",
     github: "https://github.com/JotaDev09/BookStore.git",
     screenshot: "assets/img/library.png",
-    website: "https://jotadev09.github.io/BookStore/",
+    website: "https://jotadev09.github.io/BookStore",
   },
   {
     name: "Weather App",
@@ -71,8 +71,8 @@ let knowledges = [
     icon: "assets/icons/api.png",
   },
   {
-    type: "Github",
-    icon: "assets/icons/githubBlack.svg",
+    type: "Git",
+    icon: "assets/icons/git.png",
   },
   {
     type: "Scrum",
